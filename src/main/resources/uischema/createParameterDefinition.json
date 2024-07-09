@@ -1,0 +1,167 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createParameterDefinition",
+    "title": "Create ParameterDefinition",
+    "help": "<h1>Create ParameterDefinition</h1> <b>The createParameterDefinition operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "name",
+                            "displayName": "name",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "name"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "use",
+                            "displayName": "use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "min",
+                            "displayName": "min",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "min"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "max",
+                            "displayName": "max",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "max"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "documentation",
+                            "displayName": "documentation",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "documentation"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "type",
+                            "displayName": "type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "profile",
+                            "displayName": "profile",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "profile"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

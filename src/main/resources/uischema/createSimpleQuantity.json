@@ -1,0 +1,134 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createSimpleQuantity",
+    "title": "Create SimpleQuantity",
+    "help": "<h1>Create SimpleQuantity</h1> <b>The createSimpleQuantity operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "value",
+                            "displayName": "value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "unit",
+                            "displayName": "unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "system",
+                            "displayName": "system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "code",
+                            "displayName": "code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

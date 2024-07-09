@@ -1,0 +1,200 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createRange",
+    "title": "Create Range",
+    "help": "<h1>Create Range</h1> <b>The createRange operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "low",
+                            "displayName": "low",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "low"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "low.value",
+                            "displayName": "low.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "low.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "low.unit",
+                            "displayName": "low.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "low.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "low.system",
+                            "displayName": "low.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "low.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "low.code",
+                            "displayName": "low.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "low.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "high",
+                            "displayName": "high",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "high"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "high.value",
+                            "displayName": "high.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "high.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "high.unit",
+                            "displayName": "high.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "high.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "high.system",
+                            "displayName": "high.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "high.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "high.code",
+                            "displayName": "high.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "high.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

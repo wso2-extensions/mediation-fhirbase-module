@@ -1,0 +1,101 @@
+{
+  "connectorName": "fhirBase",
+  "operationName": "createCoding",
+  "title": "Create Coding",
+  "help": "<h1>Create Coding</h1> <b>The createCoding operation</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "search",
+              "displayName": "search",
+              "inputType": "searchBox",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Search for an attribute using the display name"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "Basic",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "objectId",
+              "displayName": "objectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Object ID of the coding"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "system",
+              "displayName": "system",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "System of the coding"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "version",
+              "displayName": "version",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Version of the coding"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "code",
+              "displayName": "code",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Code of the coding"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "display",
+              "displayName": "display",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Display of the coding"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "userSelected",
+              "displayName": "userSelected",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "User selected value of the coding"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

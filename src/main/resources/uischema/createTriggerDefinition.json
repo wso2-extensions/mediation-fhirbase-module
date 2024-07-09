@@ -1,0 +1,1399 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createTriggerDefinition",
+    "title": "Create TriggerDefinition",
+    "help": "<h1>Create TriggerDefinition</h1> <b>The createTriggerDefinition operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "type",
+                            "displayName": "type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "name",
+                            "displayName": "name",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "name"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming",
+                            "displayName": "timingTiming",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.event",
+                            "displayName": "timingTiming.event",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.event"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat",
+                            "displayName": "timingTiming.repeat",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsDuration",
+                            "displayName": "timingTiming.repeat.boundsDuration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsDuration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsDuration.value",
+                            "displayName": "timingTiming.repeat.boundsDuration.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsDuration.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsDuration.comparator",
+                            "displayName": "timingTiming.repeat.boundsDuration.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsDuration.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsDuration.unit",
+                            "displayName": "timingTiming.repeat.boundsDuration.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsDuration.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsDuration.system",
+                            "displayName": "timingTiming.repeat.boundsDuration.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsDuration.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsDuration.code",
+                            "displayName": "timingTiming.repeat.boundsDuration.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsDuration.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange",
+                            "displayName": "timingTiming.repeat.boundsRange",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.low",
+                            "displayName": "timingTiming.repeat.boundsRange.low",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.low"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.low.value",
+                            "displayName": "timingTiming.repeat.boundsRange.low.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.low.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.low.unit",
+                            "displayName": "timingTiming.repeat.boundsRange.low.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.low.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.low.system",
+                            "displayName": "timingTiming.repeat.boundsRange.low.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.low.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.low.code",
+                            "displayName": "timingTiming.repeat.boundsRange.low.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.low.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.high",
+                            "displayName": "timingTiming.repeat.boundsRange.high",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.high"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.high.value",
+                            "displayName": "timingTiming.repeat.boundsRange.high.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.high.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.high.unit",
+                            "displayName": "timingTiming.repeat.boundsRange.high.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.high.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.high.system",
+                            "displayName": "timingTiming.repeat.boundsRange.high.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.high.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsRange.high.code",
+                            "displayName": "timingTiming.repeat.boundsRange.high.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsRange.high.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsPeriod",
+                            "displayName": "timingTiming.repeat.boundsPeriod",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsPeriod"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsPeriod.start",
+                            "displayName": "timingTiming.repeat.boundsPeriod.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsPeriod.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.boundsPeriod.end",
+                            "displayName": "timingTiming.repeat.boundsPeriod.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.boundsPeriod.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.count",
+                            "displayName": "timingTiming.repeat.count",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.count"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.countMax",
+                            "displayName": "timingTiming.repeat.countMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.countMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.duration",
+                            "displayName": "timingTiming.repeat.duration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.duration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.durationMax",
+                            "displayName": "timingTiming.repeat.durationMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.durationMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.durationUnit",
+                            "displayName": "timingTiming.repeat.durationUnit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.durationUnit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.frequency",
+                            "displayName": "timingTiming.repeat.frequency",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.frequency"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.frequencyMax",
+                            "displayName": "timingTiming.repeat.frequencyMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.frequencyMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.period",
+                            "displayName": "timingTiming.repeat.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.periodMax",
+                            "displayName": "timingTiming.repeat.periodMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.periodMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.periodUnit",
+                            "displayName": "timingTiming.repeat.periodUnit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.periodUnit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.dayOfWeek",
+                            "displayName": "timingTiming.repeat.dayOfWeek",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.dayOfWeek"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.timeOfDay",
+                            "displayName": "timingTiming.repeat.timeOfDay",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.timeOfDay"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.when",
+                            "displayName": "timingTiming.repeat.when",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.when"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.repeat.offset",
+                            "displayName": "timingTiming.repeat.offset",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.repeat.offset"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.code",
+                            "displayName": "timingTiming.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.code.coding.system",
+                            "displayName": "timingTiming.code.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.code.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.code.coding.version",
+                            "displayName": "timingTiming.code.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.code.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.code.coding.code",
+                            "displayName": "timingTiming.code.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.code.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.code.coding.display",
+                            "displayName": "timingTiming.code.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.code.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.code.coding.userSelected",
+                            "displayName": "timingTiming.code.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.code.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingTiming.code.text",
+                            "displayName": "timingTiming.code.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingTiming.code.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference",
+                            "displayName": "timingReference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.reference",
+                            "displayName": "timingReference.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.type",
+                            "displayName": "timingReference.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier",
+                            "displayName": "timingReference.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier.use",
+                            "displayName": "timingReference.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier.type",
+                            "displayName": "timingReference.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier.system",
+                            "displayName": "timingReference.identifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier.value",
+                            "displayName": "timingReference.identifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier.period.start",
+                            "displayName": "timingReference.identifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier.period.end",
+                            "displayName": "timingReference.identifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier.assigner.reference",
+                            "displayName": "timingReference.identifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.identifier.assigner.display",
+                            "displayName": "timingReference.identifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.identifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingReference.display",
+                            "displayName": "timingReference.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingReference.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingDate",
+                            "displayName": "timingDate",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingDate"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timingDateTime",
+                            "displayName": "timingDateTime",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timingDateTime"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.type",
+                            "displayName": "data.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.profile",
+                            "displayName": "data.profile",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.profile"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept",
+                            "displayName": "data.subjectCodeableConcept",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept.code",
+                            "displayName": "data.subjectCodeableConcept.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept.valueSet",
+                            "displayName": "data.subjectCodeableConcept.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept.coding.system",
+                            "displayName": "data.subjectCodeableConcept.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept.coding.version",
+                            "displayName": "data.subjectCodeableConcept.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept.coding.code",
+                            "displayName": "data.subjectCodeableConcept.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept.coding.display",
+                            "displayName": "data.subjectCodeableConcept.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept.coding.userSelected",
+                            "displayName": "data.subjectCodeableConcept.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectCodeableConcept.text",
+                            "displayName": "data.subjectCodeableConcept.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectCodeableConcept.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference",
+                            "displayName": "data.subjectReference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.reference",
+                            "displayName": "data.subjectReference.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.type",
+                            "displayName": "data.subjectReference.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier",
+                            "displayName": "data.subjectReference.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier.use",
+                            "displayName": "data.subjectReference.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier.type",
+                            "displayName": "data.subjectReference.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier.system",
+                            "displayName": "data.subjectReference.identifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier.value",
+                            "displayName": "data.subjectReference.identifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier.period.start",
+                            "displayName": "data.subjectReference.identifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier.period.end",
+                            "displayName": "data.subjectReference.identifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier.assigner.reference",
+                            "displayName": "data.subjectReference.identifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.identifier.assigner.display",
+                            "displayName": "data.subjectReference.identifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.identifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.subjectReference.display",
+                            "displayName": "data.subjectReference.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.subjectReference.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.mustSupport",
+                            "displayName": "data.mustSupport",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.mustSupport"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter",
+                            "displayName": "data.codeFilter",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.path",
+                            "displayName": "data.codeFilter.path",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.path"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.searchParam",
+                            "displayName": "data.codeFilter.searchParam",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.searchParam"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.valueSet",
+                            "displayName": "data.codeFilter.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.code",
+                            "displayName": "data.codeFilter.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.code.system",
+                            "displayName": "data.codeFilter.code.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.code.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.code.version",
+                            "displayName": "data.codeFilter.code.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.code.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.code.code",
+                            "displayName": "data.codeFilter.code.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.code.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.code.display",
+                            "displayName": "data.codeFilter.code.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.code.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.codeFilter.code.userSelected",
+                            "displayName": "data.codeFilter.code.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.codeFilter.code.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter",
+                            "displayName": "data.dateFilter",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.path",
+                            "displayName": "data.dateFilter.path",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.path"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.searchParam",
+                            "displayName": "data.dateFilter.searchParam",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.searchParam"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valueDateTime",
+                            "displayName": "data.dateFilter.valueDateTime",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valueDateTime"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valuePeriod",
+                            "displayName": "data.dateFilter.valuePeriod",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valuePeriod"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valuePeriod.start",
+                            "displayName": "data.dateFilter.valuePeriod.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valuePeriod.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valuePeriod.end",
+                            "displayName": "data.dateFilter.valuePeriod.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valuePeriod.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valueDuration",
+                            "displayName": "data.dateFilter.valueDuration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valueDuration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valueDuration.value",
+                            "displayName": "data.dateFilter.valueDuration.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valueDuration.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valueDuration.comparator",
+                            "displayName": "data.dateFilter.valueDuration.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valueDuration.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valueDuration.unit",
+                            "displayName": "data.dateFilter.valueDuration.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valueDuration.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valueDuration.system",
+                            "displayName": "data.dateFilter.valueDuration.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valueDuration.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.dateFilter.valueDuration.code",
+                            "displayName": "data.dateFilter.valueDuration.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.dateFilter.valueDuration.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.limit",
+                            "displayName": "data.limit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.limit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.sort",
+                            "displayName": "data.sort",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.sort"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.sort.path",
+                            "displayName": "data.sort.path",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.sort.path"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data.sort.direction",
+                            "displayName": "data.sort.direction",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data.sort.direction"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "condition",
+                            "displayName": "condition",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "condition"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "condition.description",
+                            "displayName": "condition.description",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "condition.description"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "condition.name",
+                            "displayName": "condition.name",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "condition.name"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "condition.language",
+                            "displayName": "condition.language",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "condition.language"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "condition.expression",
+                            "displayName": "condition.expression",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "condition.expression"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "condition.reference",
+                            "displayName": "condition.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "condition.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

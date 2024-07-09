@@ -1,0 +1,189 @@
+{
+  "connectorName": "fhirBase",
+  "operationName": "createContactDetail",
+  "title": "Create Contact Detail",
+  "help": "<h1>Create Contact Detail</h1> <b>The createContactDetail operation</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "search",
+              "displayName": "search",
+              "inputType": "searchBox",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Search for an attribute using the display name"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "Basic",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "objectId",
+              "displayName": "objectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Object ID of the contact detail"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "id",
+              "displayName": "id",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "ID of the contact detail"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "extension",
+              "displayName": "extension",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Extension of the contact detail"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "name",
+              "displayName": "name",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Name of the contact detail"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "telecom",
+              "displayName": "telecom",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Telecom of the contact detail"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "telecom.system",
+              "displayName": "telecom.system",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "System of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "telecom.value",
+              "displayName": "telecom.value",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Value of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "telecom.use",
+              "displayName": "telecom.use",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Use of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "telecom.rank",
+              "displayName": "telecom.rank",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Rank of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "telecom.period",
+              "displayName": "telecom.period",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Period of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "telecom.period.start",
+              "displayName": "telecom.period.start",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Start period of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "telecom.period.end",
+              "displayName": "telecom.period.end",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "End period of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "targetObjectId",
+              "displayName": "targetObjectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Target Object ID for the contact detail"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "FHIRPath",
+              "displayName": "FHIRPath",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "FHIR Path for the contact detail"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

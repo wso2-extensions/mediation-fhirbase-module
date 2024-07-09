@@ -1,0 +1,200 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createSampledData",
+    "title": "Create SampledData",
+    "help": "<h1>Create SampledData</h1> <b>The createSampledData operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "origin.value",
+                            "displayName": "origin.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "origin.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "origin.unit",
+                            "displayName": "origin.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "origin.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "origin.system",
+                            "displayName": "origin.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "origin.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "origin.code",
+                            "displayName": "origin.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "origin.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "period",
+                            "displayName": "period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "factor",
+                            "displayName": "factor",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "factor"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "lowerLimit",
+                            "displayName": "lowerLimit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "lowerLimit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "upperLimit",
+                            "displayName": "upperLimit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "upperLimit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "dimensions",
+                            "displayName": "dimensions",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "dimensions"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data",
+                            "displayName": "data",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

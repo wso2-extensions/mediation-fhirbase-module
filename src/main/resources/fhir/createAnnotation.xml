@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createAnnotation">
+    <parameter name="objectId"/>
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+    <!-- annotation related fields -->
+    <parameter name="authorReference" />
+    <parameter name="authorReference.reference" />
+    <parameter name="authorReference.type" />
+    <parameter name="authorReference.identifier" />
+    <parameter name="authorReference.identifier.use" />
+    <parameter name="authorReference.identifier.type" />
+    <parameter name="authorReference.identifier.type.coding.system" />
+    <parameter name="authorReference.identifier.type.coding.version" />
+    <parameter name="authorReference.identifier.type.coding.code" />
+    <parameter name="authorReference.identifier.type.coding.display" />
+    <parameter name="authorReference.identifier.type.coding.userSelected" />
+    <parameter name="authorReference.identifier.type.text" />
+    <parameter name="authorReference.identifier.system" />
+    <parameter name="authorReference.identifier.value" />
+    <parameter name="authorReference.identifier.period" />
+    <parameter name="authorReference.identifier.period.start" />
+    <parameter name="authorReference.identifier.period.end" />
+    <parameter name="authorReference.identifier.assigner" />
+    <parameter name="authorReference.identifier.assigner.reference" />
+    <parameter name="authorReference.identifier.assigner.type" />
+    <parameter name="authorReference.identifier.assigner.identifier" />
+    <parameter name="authorReference.identifier.assigner.display" />
+    <parameter name="authorReference.display" />
+    <parameter name="authorString" />
+    <parameter name="time" />
+    <parameter name="text" />
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateGeneralPurposeDataType">
+            <property name="dataType" value="Annotation"/>
+        </class>
+    </sequence>
+</template>

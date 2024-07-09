@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<component name="fhir" type="synapse/template" >
+    <subComponents>
+		<component name="init" >
+			<file>init.xml</file>
+			<description>Initialize FHIR server connector</description>
+		</component>
+		<component name="serialize" >
+			<file>serialize.xml</file>
+			<description>Serialize FHIR Resource to the message in Message Context</description>
+		</component>
+		<component name="evaluateFHIRPath" >
+			<file>evaluateFHIRPath.xml</file>
+			<description>Evaluate FHIRPath and retrieve information</description>
+		</component>
+		<component name="createReference" >
+			<file>createReference.xml</file>
+			<description>Create FHIR reference element</description>
+		</component>
+		<component name="addElement" >
+			<file>addElement.xml</file>
+			<description>Add/Insert element to target resource to location given by FhirPath</description>
+		</component>
+		<component name="createCoding" >
+			<file>createCoding.xml</file>
+			<description>Create Coding Data Object</description>
+		</component>
+		<component name="createCodeableConcept" >
+			<file>createCodeableConcept.xml</file>
+			<description>Create Coding Data Object</description>
+		</component>
+		<component name="validate" >
+			<file>validate.xml</file>
+			<description>Validate generated FHIR Resource payload</description>
+		</component>
+		<component name="createIdentifier" >
+			<file>createIdentifier.xml</file>
+			<description>Create Identifier Data Object</description>
+		</component>
+		<component name="createAddress" >
+			<file>createAddress.xml</file>
+			<description>Create Address Data Object</description>
+		</component>
+		<component name="createAnnotation" >
+			<file>createAnnotation.xml</file>
+			<description>Create Annotation Data Object</description>
+		</component>
+		<component name="createAttachment" >
+			<file>createAttachment.xml</file>
+			<description>Create Attachment Data Object</description>
+		</component>
+		<component name="createContactPoint" >
+			<file>createContactPoint.xml</file>
+			<description>Create ContactPoint Data Object</description>
+		</component>
+		<component name="createHumanName" >
+			<file>createHumanName.xml</file>
+			<description>Create HumanName Data Object</description>
+		</component>
+		<component name="createPeriod" >
+			<file>createPeriod.xml</file>
+			<description>Create Period Data Object</description>
+		</component>
+		<component name="createMoney" >
+			<file>createMoney.xml</file>
+			<description>Create Money Data Object</description>
+		</component>
+		<component name="createQuantity" >
+			<file>createQuantity.xml</file>
+			<description>Create Quantity Data Object</description>
+		</component>
+		<component name="createSimpleQuantity" >
+			<file>createSimpleQuantity.xml</file>
+			<description>Create SimpleQuantity Data Object</description>
+		</component>
+		<component name="createRange" >
+			<file>createRange.xml</file>
+			<description>Create Range Data Object</description>
+		</component>
+		<component name="createRatio" >
+			<file>createRatio.xml</file>
+			<description>Create Ratio Data Object</description>
+		</component>
+		<component name="createSignature" >
+			<file>createSignature.xml</file>
+			<description>Create Signature Data Object</description>
+		</component>
+		<component name="createTiming" >
+			<file>createTiming.xml</file>
+			<description>Create Timing Data Object</description>
+		</component>
+		<component name="createSampledData" >
+			<file>createSampledData.xml</file>
+			<description>Create SampledData data object</description>
+		</component>
+		<component name="createAge" >
+			<file>createAge.xml</file>
+			<description>Create Age data object</description>
+		</component>
+		<component name="createDistance" >
+			<file>createDistance.xml</file>
+			<description>Create Distance data object</description>
+		</component>
+		<component name="createDuration" >
+			<file>createDuration.xml</file>
+			<description>Create Duration data object</description>
+		</component>
+		<component name="createCount" >
+			<file>createCount.xml</file>
+			<description>Create Count data object</description>
+		</component>
+		<component name="createMoneyQuantity" >
+			<file>createMoneyQuantity.xml</file>
+			<description>Create MoneyQuantity data object</description>
+		</component>
+
+		<component name="createPrimitiveType" >
+			<file>createPrimitiveType.xml</file>
+			<description>Create primitive data type</description>
+		</component>
+
+		<!-- Operation to create Meta Data Types -->
+		<component name="createContactDetail" >
+			<file>createContactDetail.xml</file>
+			<description>Create ContactDetail data type</description>
+		</component>
+		<component name="createContributor" >
+			<file>createContributor.xml</file>
+			<description>Create Contributor data type</description>
+		</component>
+		<component name="createDataRequirement" >
+			<file>createDataRequirement.xml</file>
+			<description>Create DataRequirement data type</description>
+		</component>
+		<component name="createParameterDefinition" >
+			<file>createParameterDefinition.xml</file>
+			<description>Create ParameterDefinition data type</description>
+		</component>
+		<component name="createRelatedArtifact" >
+			<file>createRelatedArtifact.xml</file>
+			<description>Create RelatedArtifact data type</description>
+		</component>
+		<component name="createTriggerDefinition" >
+			<file>createTriggerDefinition.xml</file>
+			<description>Create TriggerDefinition data type</description>
+		</component>
+		<component name="createExpression" >
+			<file>createExpression.xml</file>
+			<description>Create Expression data type</description>
+		</component>
+		<component name="createUsageContext" >
+			<file>createUsageContext.xml</file>
+			<description>Create UsageContext data type</description>
+		</component>
+
+		<!--Operations to create special purpose data types-->
+		<component name="createNarrative" >
+			<file>createNarrative.xml</file>
+			<description>Create Narrative data type</description>
+		</component>
+		<component name="createExtension" >
+			<file>createExtension.xml</file>
+			<description>Create FHIR extension element</description>
+		</component>
+		<component name="createMeta" >
+			<file>createMeta.xml</file>
+			<description>Create Meta data type</description>
+		</component>
+		<component name="createDosage" >
+			<file>createDosage.xml</file>
+			<description>Create Dosage data type</description>
+		</component>
+		<component name="createResource" >
+			<file>createResource.xml</file>
+			<description>Create FHIR empty resource for given type</description>
+		</component>
+		<component name="engageTemplate" >
+			<file>engageTemplate.xml</file>
+			<description>Engage FHIR mapping templates</description>
+		</component>
+		<component name="createBundle" >
+			<file>createBundle.xml</file>
+			<description>Operation to create Bundle resource</description>
+		</component>
+		<component name="setBundleIdentifier">
+			<file>setBundleIdentifier.xml</file>
+			<description>setIdentifier Bundle resource operation</description>
+		</component>
+		<component name="setBundleType">
+			<file>setBundleType.xml</file>
+			<description>setType Bundle resource operation</description>
+		</component>
+		<component name="setBundleTimestamp">
+			<file>setBundleTimestamp.xml</file>
+			<description>setTimestamp Bundle resource operation</description>
+		</component>
+		<component name="setBundleTotal">
+			<file>setBundleTotal.xml</file>
+			<description>setTotal Bundle resource operation</description>
+		</component>
+		<component name="addBundleLink">
+			<file>addBundleLink.xml</file>
+			<description>addLink Bundle resource operation</description>
+		</component>
+		<component name="addBundleEntry">
+			<file>addBundleEntry.xml</file>
+			<description>addEntry Bundle resource operation</description>
+		</component>
+		<component name="setBundleSignature">
+			<file>setBundleSignature.xml</file>
+			<description>setSignature Bundle resource operation</description>
+		</component>
+    </subComponents>    
+</component>

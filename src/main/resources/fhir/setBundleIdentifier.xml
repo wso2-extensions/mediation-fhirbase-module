@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<!-- Generated on 18-Thu, 06, 2020 18:09:12+0530 -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="setBundleIdentifier">
+	<parameter name="objectId" />
+
+	<parameter name="identifier" />
+	<parameter name="identifier.use" />
+	<parameter name="identifier.type" />
+	<parameter name="identifier.type.coding.system" />
+	<parameter name="identifier.type.coding.version" />
+	<parameter name="identifier.type.coding.code" />
+	<parameter name="identifier.type.coding.display" />
+	<parameter name="identifier.type.coding.userSelected" />
+	<parameter name="identifier.type.text" />
+	<parameter name="identifier.system" />
+	<parameter name="identifier.value" />
+	<parameter name="identifier.period" />
+	<parameter name="identifier.period.start" />
+	<parameter name="identifier.period.end" />
+	<parameter name="identifier.assigner" />
+	<parameter name="identifier.assigner.reference" />
+	<parameter name="identifier.assigner.type" />
+	<parameter name="identifier.assigner.identifier" />
+	<parameter name="identifier.assigner.identifier.use" />
+	<parameter name="identifier.assigner.identifier.type" />
+	<parameter name="identifier.assigner.identifier.system" />
+	<parameter name="identifier.assigner.identifier.value" />
+	<parameter name="identifier.assigner.identifier.period" />
+	<parameter name="identifier.assigner.identifier.assigner" />
+	<parameter name="identifier.assigner.display" />
+	<sequence>
+		<class name="org.wso2.healthcare.integration.fhir.operations.FHIRSetBundleIdentifier" />
+	</sequence>
+</template>

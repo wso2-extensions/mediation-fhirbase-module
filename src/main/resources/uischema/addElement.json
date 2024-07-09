@@ -1,0 +1,76 @@
+{
+  "connectorName" : "fhirBase",
+  "operationName" : "addElement",
+  "title" : "AddElement",
+  "help" : "<h1>AddElement</h1> <b>The addElement operation</b>",
+  "elements" : [
+    {
+      "type" : "attributeGroup",
+      "value" : {
+        "groupName" : "General",
+        "elements" : [
+          {
+            "type" : "attributeGroup",
+            "value" : {
+              "groupName" : "Search",
+              "elements" : [
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "search",
+                    "displayName" : "Search",
+                    "inputType" : "searchBox",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "Search for an attribute using the display name"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type" : "attributeGroup",
+            "value" : {
+              "groupName" : "Basic",
+              "elements" : [
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "objectId",
+                    "displayName" : "objectId",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "AddElement"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "FHIRPath",
+                    "displayName" : "FHIRPath",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "AddElement"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "sourceObjectId",
+                    "displayName" : "sourceObjectId",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "AddElement"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

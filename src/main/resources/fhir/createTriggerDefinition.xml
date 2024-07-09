@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createTriggerDefinition">
+    <parameter name="objectId"/>
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+
+    <!-- TriggerDefinition related fields-->
+    <parameter name="type"/>
+    <parameter name="name"/>
+
+    <parameter name="timingTiming"/>
+    <parameter name="timingTiming.event" />
+    <parameter name="timingTiming.repeat" />
+    <parameter name="timingTiming.repeat.boundsDuration" />
+    <parameter name="timingTiming.repeat.boundsDuration.value" />
+    <parameter name="timingTiming.repeat.boundsDuration.comparator" />
+    <parameter name="timingTiming.repeat.boundsDuration.unit" />
+    <parameter name="timingTiming.repeat.boundsDuration.system" />
+    <parameter name="timingTiming.repeat.boundsDuration.code" />
+
+    <parameter name="timingTiming.repeat.boundsRange" />
+    <parameter name="timingTiming.repeat.boundsRange.low" />
+    <parameter name="timingTiming.repeat.boundsRange.low.value" />
+    <parameter name="timingTiming.repeat.boundsRange.low.unit" />
+    <parameter name="timingTiming.repeat.boundsRange.low.system" />
+    <parameter name="timingTiming.repeat.boundsRange.low.code" />
+    <parameter name="timingTiming.repeat.boundsRange.high" />
+    <parameter name="timingTiming.repeat.boundsRange.high.value" />
+    <parameter name="timingTiming.repeat.boundsRange.high.unit" />
+    <parameter name="timingTiming.repeat.boundsRange.high.system" />
+    <parameter name="timingTiming.repeat.boundsRange.high.code" />
+
+    <parameter name="timingTiming.repeat.boundsPeriod" />
+    <parameter name="timingTiming.repeat.boundsPeriod.start" />
+    <parameter name="timingTiming.repeat.boundsPeriod.end" />
+
+    <parameter name="timingTiming.repeat.count" />
+    <parameter name="timingTiming.repeat.countMax" />
+    <parameter name="timingTiming.repeat.duration" />
+    <parameter name="timingTiming.repeat.durationMax" />
+    <parameter name="timingTiming.repeat.durationUnit" />
+    <parameter name="timingTiming.repeat.frequency" />
+    <parameter name="timingTiming.repeat.frequencyMax" />
+    <parameter name="timingTiming.repeat.period" />
+    <parameter name="timingTiming.repeat.periodMax" />
+    <parameter name="timingTiming.repeat.periodUnit" />
+    <parameter name="timingTiming.repeat.dayOfWeek" />
+    <parameter name="timingTiming.repeat.timeOfDay" />
+    <parameter name="timingTiming.repeat.when" />
+    <parameter name="timingTiming.repeat.offset" />
+    <parameter name="timingTiming.code" />
+    <parameter name="timingTiming.code.coding.system" />
+    <parameter name="timingTiming.code.coding.version" />
+    <parameter name="timingTiming.code.coding.code" />
+    <parameter name="timingTiming.code.coding.display" />
+    <parameter name="timingTiming.code.coding.userSelected" />
+    <parameter name="timingTiming.code.text" />
+
+    <parameter name="timingReference"/>
+    <parameter name="timingReference.reference"/>
+    <parameter name="timingReference.type"/>
+    <parameter name="timingReference.identifier"/>
+    <parameter name="timingReference.identifier.use"/>
+    <parameter name="timingReference.identifier.type"/>
+    <parameter name="timingReference.identifier.system"/>
+    <parameter name="timingReference.identifier.value"/>
+    <parameter name="timingReference.identifier.period.start"/>
+    <parameter name="timingReference.identifier.period.end"/>
+    <parameter name="timingReference.identifier.assigner.reference"/>
+    <parameter name="timingReference.identifier.assigner.display"/>
+    <parameter name="timingReference.display"/>
+
+    <parameter name="timingDate"/>
+    <parameter name="timingDateTime"/>
+
+    <parameter name="data.type"/>
+    <parameter name="data.profile"/>
+    <parameter name="data.subjectCodeableConcept"/>
+    <parameter name="data.subjectCodeableConcept.code"/>
+    <parameter name="data.subjectCodeableConcept.valueSet"/>
+    <parameter name="data.subjectCodeableConcept.coding.system"/>
+    <parameter name="data.subjectCodeableConcept.coding.version"/>
+    <parameter name="data.subjectCodeableConcept.coding.code"/>
+    <parameter name="data.subjectCodeableConcept.coding.display"/>
+    <parameter name="data.subjectCodeableConcept.coding.userSelected"/>
+    <parameter name="data.subjectCodeableConcept.text"/>
+    <parameter name="data.subjectReference"/>
+    <parameter name="data.subjectReference.reference"/>
+    <parameter name="data.subjectReference.type"/>
+    <parameter name="data.subjectReference.identifier"/>
+    <parameter name="data.subjectReference.identifier.use"/>
+    <parameter name="data.subjectReference.identifier.type"/>
+    <parameter name="data.subjectReference.identifier.system"/>
+    <parameter name="data.subjectReference.identifier.value"/>
+    <parameter name="data.subjectReference.identifier.period.start"/>
+    <parameter name="data.subjectReference.identifier.period.end"/>
+    <parameter name="data.subjectReference.identifier.assigner.reference"/>
+    <parameter name="data.subjectReference.identifier.assigner.display"/>
+    <parameter name="data.subjectReference.display"/>
+    <parameter name="data.mustSupport"/>
+    <parameter name="data.codeFilter"/>
+    <parameter name="data.codeFilter.path"/>
+    <parameter name="data.codeFilter.searchParam"/>
+    <parameter name="data.codeFilter.valueSet"/>
+    <parameter name="data.codeFilter.code"/>
+    <parameter name="data.codeFilter.code.system"/>
+    <parameter name="data.codeFilter.code.version"/>
+    <parameter name="data.codeFilter.code.code"/>
+    <parameter name="data.codeFilter.code.display"/>
+    <parameter name="data.codeFilter.code.userSelected"/>
+    <parameter name="data.dateFilter"/>
+    <parameter name="data.dateFilter.path"/>
+    <parameter name="data.dateFilter.searchParam"/>
+    <parameter name="data.dateFilter.valueDateTime"/>
+    <parameter name="data.dateFilter.valuePeriod"/>
+    <parameter name="data.dateFilter.valuePeriod.start"/>
+    <parameter name="data.dateFilter.valuePeriod.end"/>
+    <parameter name="data.dateFilter.valueDuration"/>
+    <parameter name="data.dateFilter.valueDuration.value"/>
+    <parameter name="data.dateFilter.valueDuration.comparator"/>
+    <parameter name="data.dateFilter.valueDuration.unit"/>
+    <parameter name="data.dateFilter.valueDuration.system"/>
+    <parameter name="data.dateFilter.valueDuration.code"/>
+    <parameter name="data.limit"/>
+    <parameter name="data.sort"/>
+    <parameter name="data.sort.path"/>
+    <parameter name="data.sort.direction"/>
+
+    <parameter name="condition" />
+    <parameter name="condition.description" />
+    <parameter name="condition.name" />
+    <parameter name="condition.language" />
+    <parameter name="condition.expression" />
+    <parameter name="condition.reference" />
+
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateMetaDataType">
+            <property name="dataType" value="TriggerDefinition"/>
+        </class>
+    </sequence>
+</template>

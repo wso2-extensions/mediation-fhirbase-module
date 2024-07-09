@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createSignature">
+    <parameter name="objectId"/>
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+    <!-- signature related fields -->
+    <parameter name="type.system" />
+    <parameter name="type.version" />
+    <parameter name="type.code" />
+    <parameter name="type.display" />
+    <parameter name="type.userSelected" />
+    <parameter name="when" />
+    <parameter name="who" />
+    <parameter name="who.reference" />
+    <parameter name="who.type" />
+    <parameter name="who.identifier" />
+    <parameter name="who.identifier.use" />
+    <parameter name="who.identifier.type" />
+    <parameter name="who.identifier.type.coding.system" />
+    <parameter name="who.identifier.type.coding.version" />
+    <parameter name="who.identifier.type.coding.code" />
+    <parameter name="who.identifier.type.coding.display" />
+    <parameter name="who.identifier.type.coding.userSelected" />
+    <parameter name="who.identifier.type.text" />
+    <parameter name="who.identifier.system" />
+    <parameter name="who.identifier.value" />
+    <parameter name="who.identifier.period" />
+    <parameter name="who.identifier.period.start" />
+    <parameter name="who.identifier.period.end" />
+    <parameter name="who.identifier.assigner" />
+    <parameter name="who.identifier.assigner.reference" />
+    <parameter name="who.identifier.assigner.type" />
+    <parameter name="who.identifier.assigner.identifier" />
+    <parameter name="who.identifier.assigner.display" />
+    <parameter name="who.display" />
+    <parameter name="onBehalfOf" />
+    <parameter name="onBehalfOf.reference" />
+    <parameter name="onBehalfOf.type" />
+    <parameter name="onBehalfOf.identifier" />
+    <parameter name="onBehalfOf.identifier.use" />
+    <parameter name="onBehalfOf.identifier.type" />
+    <parameter name="onBehalfOf.identifier.type.coding.system" />
+    <parameter name="onBehalfOf.identifier.type.coding.version" />
+    <parameter name="onBehalfOf.identifier.type.coding.code" />
+    <parameter name="onBehalfOf.identifier.type.coding.display" />
+    <parameter name="onBehalfOf.identifier.type.coding.userSelected" />
+    <parameter name="onBehalfOf.identifier.type.text" />
+    <parameter name="onBehalfOf.identifier.system" />
+    <parameter name="onBehalfOf.identifier.value" />
+    <parameter name="onBehalfOf.identifier.period" />
+    <parameter name="onBehalfOf.identifier.period.start" />
+    <parameter name="onBehalfOf.identifier.period.end" />
+    <parameter name="onBehalfOf.identifier.assigner" />
+    <parameter name="onBehalfOf.identifier.assigner.reference" />
+    <parameter name="onBehalfOf.identifier.assigner.type" />
+    <parameter name="onBehalfOf.identifier.assigner.identifier" />
+    <parameter name="onBehalfOf.identifier.assigner.display" />
+    <parameter name="onBehalfOf.display" />
+    <parameter name="targetFormat" />
+    <parameter name="sigFormat" />
+    <parameter name="data" />
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateGeneralPurposeDataType">
+            <property name="dataType" value="Signature"/>
+        </class>
+    </sequence>
+</template>

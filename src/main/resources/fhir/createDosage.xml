@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createDosage">
+    <parameter name="objectId"/>
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+
+    <!--Dosage related parameters-->
+    <parameter name="sequence"/>
+    <parameter name="text"/>
+    <parameter name="additionalInstruction"/>
+    <parameter name="additionalInstruction.code"/>
+    <parameter name="additionalInstruction.valueSet"/>
+    <parameter name="additionalInstruction.coding.system"/>
+    <parameter name="additionalInstruction.coding.version"/>
+    <parameter name="additionalInstruction.coding.code"/>
+    <parameter name="additionalInstruction.coding.display"/>
+    <parameter name="additionalInstruction.coding.userSelected"/>
+    <parameter name="additionalInstruction.text"/>
+
+    <!-- timing related parameters -->
+    <parameter name="timing"/>
+    <parameter name="timing.event" />
+    <parameter name="timing.repeat" />
+    <parameter name="timing.repeat.boundsDuration" />
+    <parameter name="timing.repeat.boundsDuration.value" />
+    <parameter name="timing.repeat.boundsDuration.comparator" />
+    <parameter name="timing.repeat.boundsDuration.unit" />
+    <parameter name="timing.repeat.boundsDuration.system" />
+    <parameter name="timing.repeat.boundsDuration.code" />
+    <parameter name="timing.repeat.boundsRange" />
+    <parameter name="timing.repeat.boundsRange.low" />
+    <parameter name="timing.repeat.boundsRange.low.value" />
+    <parameter name="timing.repeat.boundsRange.low.unit" />
+    <parameter name="timing.repeat.boundsRange.low.system" />
+    <parameter name="timing.repeat.boundsRange.low.code" />
+    <parameter name="timing.repeat.boundsRange.high" />
+    <parameter name="timing.repeat.boundsRange.high.value" />
+    <parameter name="timing.repeat.boundsRange.high.unit" />
+    <parameter name="timing.repeat.boundsRange.high.system" />
+    <parameter name="timing.repeat.boundsRange.high.code" />
+    <parameter name="timing.repeat.boundsPeriod" />
+    <parameter name="timing.repeat.boundsPeriod.start" />
+    <parameter name="timing.repeat.boundsPeriod.end" />
+    <parameter name="timing.repeat.count" />
+    <parameter name="timing.repeat.countMax" />
+    <parameter name="timing.repeat.duration" />
+    <parameter name="timing.repeat.durationMax" />
+    <parameter name="timing.repeat.durationUnit" />
+    <parameter name="timing.repeat.frequency" />
+    <parameter name="timing.repeat.frequencyMax" />
+    <parameter name="timing.repeat.period" />
+    <parameter name="timing.repeat.periodMax" />
+    <parameter name="timing.repeat.periodUnit" />
+    <parameter name="timing.repeat.dayOfWeek" />
+    <parameter name="timing.repeat.timeOfDay" />
+    <parameter name="timing.repeat.when" />
+    <parameter name="timing.repeat.offset" />
+    <parameter name="timing.code" />
+    <parameter name="timing.code.coding.system" />
+    <parameter name="timing.code.coding.version" />
+    <parameter name="timing.code.coding.code" />
+    <parameter name="timing.code.coding.display" />
+    <parameter name="timing.code.coding.userSelected" />
+    <parameter name="timing.code.text" />
+
+    <parameter name="asNeededBoolean"/>
+    <parameter name="asNeededCodeableConcept"/>
+    <parameter name="asNeededCodeableConcept.code"/>
+    <parameter name="asNeededCodeableConcept.valueSet"/>
+    <parameter name="asNeededCodeableConcept.coding.system"/>
+    <parameter name="asNeededCodeableConcept.coding.version"/>
+    <parameter name="asNeededCodeableConcept.coding.code"/>
+    <parameter name="asNeededCodeableConcept.coding.display"/>
+    <parameter name="asNeededCodeableConcept.coding.userSelected"/>
+    <parameter name="asNeededCodeableConcept.text"/>
+
+    <parameter name="site"/>
+    <parameter name="site.code"/>
+    <parameter name="site.valueSet"/>
+    <parameter name="site.coding.system"/>
+    <parameter name="site.coding.version"/>
+    <parameter name="site.coding.code"/>
+    <parameter name="site.coding.display"/>
+    <parameter name="site.coding.userSelected"/>
+    <parameter name="site.text"/>
+
+    <parameter name="route"/>
+    <parameter name="route.code"/>
+    <parameter name="route.valueSet"/>
+    <parameter name="route.coding.system"/>
+    <parameter name="route.coding.version"/>
+    <parameter name="route.coding.code"/>
+    <parameter name="route.coding.display"/>
+    <parameter name="route.coding.userSelected"/>
+    <parameter name="route.text"/>
+
+    <parameter name="method"/>
+    <parameter name="method.code"/>
+    <parameter name="method.valueSet"/>
+    <parameter name="method.coding.system"/>
+    <parameter name="method.coding.version"/>
+    <parameter name="method.coding.code"/>
+    <parameter name="method.coding.display"/>
+    <parameter name="method.coding.userSelected"/>
+    <parameter name="method.text"/>
+
+    <parameter name="doseAndRate"/>
+    <parameter name="doseAndRate.type"/>
+    <parameter name="doseAndRate.type.code"/>
+    <parameter name="doseAndRate.type.valueSet"/>
+    <parameter name="doseAndRate.type.coding.system"/>
+    <parameter name="doseAndRate.type.coding.version"/>
+    <parameter name="doseAndRate.type.coding.code"/>
+    <parameter name="doseAndRate.type.coding.display"/>
+    <parameter name="doseAndRate.type.coding.userSelected"/>
+    <parameter name="doseAndRate.type.text"/>
+
+    <parameter name="doseAndRate.doseRange"/>
+    <parameter name="doseAndRate.doseRange.low" />
+    <parameter name="doseAndRate.doseRange.low.value" />
+    <parameter name="doseAndRate.doseRange.low.unit" />
+    <parameter name="doseAndRate.doseRange.low.system" />
+    <parameter name="doseAndRate.doseRange.low.code" />
+    <parameter name="doseAndRate.doseRange.high" />
+    <parameter name="doseAndRate.doseRange.high.value" />
+    <parameter name="doseAndRate.doseRange.high.unit" />
+    <parameter name="doseAndRate.doseRange.high.system" />
+    <parameter name="doseAndRate.doseRange.high.code" />
+
+    <parameter name="doseAndRate.doseQuantity"/>
+    <parameter name="doseAndRate.doseQuantity.value" />
+    <parameter name="doseAndRate.doseQuantity.unit" />
+    <parameter name="doseAndRate.doseQuantity.system" />
+    <parameter name="doseAndRate.doseQuantity.code" />
+
+    <parameter name="doseAndRate.rateRatio"/>
+    <parameter name="doseAndRate.rateRatio.numerator" />
+    <parameter name="doseAndRate.rateRatio.numerator.value" />
+    <parameter name="doseAndRate.rateRatio.numerator.comparator" />
+    <parameter name="doseAndRate.rateRatio.numerator.unit" />
+    <parameter name="doseAndRate.rateRatio.numerator.system" />
+    <parameter name="doseAndRate.rateRatio.numerator.code" />
+    <parameter name="doseAndRate.rateRatio.denominator" />
+    <parameter name="doseAndRate.rateRatio.denominator.value" />
+    <parameter name="doseAndRate.rateRatio.denominator.comparator" />
+    <parameter name="doseAndRate.rateRatio.denominator.unit" />
+    <parameter name="doseAndRate.rateRatio.denominator.system" />
+    <parameter name="doseAndRate.rateRatio.denominator.code" />
+
+    <parameter name="doseAndRate.rateRange"/>
+    <parameter name="doseAndRate.rateRange.low" />
+    <parameter name="doseAndRate.rateRange.low.value" />
+    <parameter name="doseAndRate.rateRange.low.unit" />
+    <parameter name="doseAndRate.rateRange.low.system" />
+    <parameter name="doseAndRate.rateRange.low.code" />
+    <parameter name="doseAndRate.rateRange.high" />
+    <parameter name="doseAndRate.rateRange.high.value" />
+    <parameter name="doseAndRate.rateRange.high.unit" />
+    <parameter name="doseAndRate.rateRange.high.system" />
+    <parameter name="doseAndRate.rateRange.high.code" />
+
+    <parameter name="doseAndRate.rateQuantity"/>
+    <parameter name="doseAndRate.rateQuantity.value" />
+    <parameter name="doseAndRate.rateQuantity.comparator" />
+    <parameter name="doseAndRate.rateQuantity.unit" />
+    <parameter name="doseAndRate.rateQuantity.system" />
+    <parameter name="doseAndRate.rateQuantity.code" />
+
+    <parameter name="maxDosePerPeriod"/>
+    <parameter name="maxDosePerPeriod.numerator" />
+    <parameter name="maxDosePerPeriod.numerator.value" />
+    <parameter name="maxDosePerPeriod.numerator.comparator" />
+    <parameter name="maxDosePerPeriod.numerator.unit" />
+    <parameter name="maxDosePerPeriod.numerator.system" />
+    <parameter name="maxDosePerPeriod.numerator.code" />
+    <parameter name="maxDosePerPeriod.denominator" />
+    <parameter name="maxDosePerPeriod.denominator.value" />
+    <parameter name="maxDosePerPeriod.denominator.comparator" />
+    <parameter name="maxDosePerPeriod.denominator.unit" />
+    <parameter name="maxDosePerPeriod.denominator.system" />
+    <parameter name="maxDosePerPeriod.denominator.code" />
+
+    <parameter name="maxDosePerAdministration"/>
+    <parameter name="maxDosePerAdministration.value" />
+    <parameter name="maxDosePerAdministration.unit" />
+    <parameter name="maxDosePerAdministration.system" />
+    <parameter name="maxDosePerAdministration.code" />
+
+    <parameter name="maxDosePerLifetime"/>
+    <parameter name="maxDosePerLifetime.value" />
+    <parameter name="maxDosePerLifetime.unit" />
+    <parameter name="maxDosePerLifetime.system" />
+    <parameter name="maxDosePerLifetime.code" />
+
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateSpecialPurposeDataType">
+            <property name="dataType" value="Dosage"/>
+        </class>
+    </sequence>
+</template>

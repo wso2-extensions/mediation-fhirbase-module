@@ -1,0 +1,22 @@
+{
+  "name" : "FHIR Base Module",
+  "owner" : "WSO2",
+  "category": "Developer Tools",
+  "documentationUrl": "https://github.com/wso2-extensions/mediation-fhirbase-module/tree/main/docs",
+  "description": "The FHIR Base Module facilitates basic CRUD operations and searches on FHIR resources, bundling, error handling and ensuring standardized interactions with FHIR-compliant servers.",
+  "status": "Active",
+  "labels": [
+    "FHIR",
+    "Healthcare"
+  ],
+  "releases": [
+    {
+      "tagName": "1.0.0",
+      "products": [
+        "MI 4.2.0",
+        "MI 1.2.0",
+        "EI 6.6.0"
+      ]
+    }
+  ]
+}

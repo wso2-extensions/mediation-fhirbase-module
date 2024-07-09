@@ -1,0 +1,167 @@
+{
+  "connectorName": "fhirBase",
+  "operationName": "createContactPoint",
+  "title": "Create Contact Point",
+  "help": "<h1>Create Contact Point</h1> <b>The createContactPoint operation</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "search",
+              "displayName": "search",
+              "inputType": "searchBox",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Search for an attribute using the display name"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "Basic",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "objectId",
+              "displayName": "objectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Object ID of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "id",
+              "displayName": "id",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "ID of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "extension",
+              "displayName": "extension",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Extension of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "system",
+              "displayName": "system",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "System of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "value",
+              "displayName": "value",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Value of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "use",
+              "displayName": "use",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Use of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "rank",
+              "displayName": "rank",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Rank of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "period",
+              "displayName": "period",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Period of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "period.start",
+              "displayName": "period.start",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Start period of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "period.end",
+              "displayName": "period.end",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "End period of the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "targetObjectId",
+              "displayName": "targetObjectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Target Object ID for the contact point"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "FHIRPath",
+              "displayName": "FHIRPath",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "FHIR Path for the contact point"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

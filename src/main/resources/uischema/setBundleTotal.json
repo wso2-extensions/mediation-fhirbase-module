@@ -1,0 +1,54 @@
+{
+    "connectorName" : "fhirBase",
+    "operationName" : "setBundleTotal",
+    "title" : "SetBundleTotal",
+    "help" : "<h1>SetBundleTotal</h1> <b>The setTotal operation</b>",
+    "elements" : [
+        {
+            "type" : "attributeGroup",
+            "value" : {
+                "groupName" : "General",
+                "elements" : [
+                    {
+                        "type" : "attributeGroup",
+                        "value" : {
+                            "groupName" : "Search",
+                            "elements" : [
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "search",
+                                        "displayName" : "Search",
+                                        "inputType" : "searchBox",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "Search for an attribute using the display name"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type" : "attributeGroup",
+                        "value" : {
+                            "groupName" : "Basic",
+                            "elements" : [
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "total",
+                                        "displayName" : "total",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleTotal"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

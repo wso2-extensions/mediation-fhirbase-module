@@ -1,0 +1,255 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createRelatedArtifact",
+    "title": "Create RelatedArtifact",
+    "help": "<h1>Create RelatedArtifact</h1> <b>The createRelatedArtifact operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "type",
+                            "displayName": "type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "label",
+                            "displayName": "label",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "label"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "display",
+                            "displayName": "display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "citation",
+                            "displayName": "citation",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "citation"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "url",
+                            "displayName": "url",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "url"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document",
+                            "displayName": "document",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document.contentType",
+                            "displayName": "document.contentType",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document.contentType"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document.language",
+                            "displayName": "document.language",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document.language"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document.data",
+                            "displayName": "document.data",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document.data"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document.url",
+                            "displayName": "document.url",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document.url"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document.size",
+                            "displayName": "document.size",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document.size"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document.hash",
+                            "displayName": "document.hash",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document.hash"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document.title",
+                            "displayName": "document.title",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document.title"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "document.creation",
+                            "displayName": "document.creation",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "document.creation"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "resource",
+                            "displayName": "resource",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "resource"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
