@@ -1,0 +1,659 @@
+{
+    "connectorName" : "fhirBase",
+    "operationName" : "setBundleSignature",
+    "title" : "SetBundleSignature",
+    "help" : "<h1>SetBundleSignature</h1> <b>The setSignature operation</b>",
+    "elements" : [
+        {
+            "type" : "attributeGroup",
+            "value" : {
+                "groupName" : "General",
+                "elements" : [
+                    {
+                        "type" : "attributeGroup",
+                        "value" : {
+                            "groupName" : "Search",
+                            "elements" : [
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "search",
+                                        "displayName" : "Search",
+                                        "inputType" : "searchBox",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "Search for an attribute using the display name"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type" : "attributeGroup",
+                        "value" : {
+                            "groupName" : "Basic",
+                            "elements" : [
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature",
+                                        "displayName" : "signature",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.type.system",
+                                        "displayName" : "signature.type.system",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.type.version",
+                                        "displayName" : "signature.type.version",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.type.code",
+                                        "displayName" : "signature.type.code",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.type.display",
+                                        "displayName" : "signature.type.display",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.type.userSelected",
+                                        "displayName" : "signature.type.userSelected",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.when",
+                                        "displayName" : "signature.when",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who",
+                                        "displayName" : "signature.who",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.reference",
+                                        "displayName" : "signature.who.reference",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.type",
+                                        "displayName" : "signature.who.type",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier",
+                                        "displayName" : "signature.who.identifier",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.use",
+                                        "displayName" : "signature.who.identifier.use",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.type",
+                                        "displayName" : "signature.who.identifier.type",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.type.coding.system",
+                                        "displayName" : "signature.who.identifier.type.coding.system",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.type.coding.version",
+                                        "displayName" : "signature.who.identifier.type.coding.version",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.type.coding.code",
+                                        "displayName" : "signature.who.identifier.type.coding.code",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.type.coding.display",
+                                        "displayName" : "signature.who.identifier.type.coding.display",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.type.coding.userSelected",
+                                        "displayName" : "signature.who.identifier.type.coding.userSelected",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.type.text",
+                                        "displayName" : "signature.who.identifier.type.text",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.system",
+                                        "displayName" : "signature.who.identifier.system",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.value",
+                                        "displayName" : "signature.who.identifier.value",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.period",
+                                        "displayName" : "signature.who.identifier.period",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.period.start",
+                                        "displayName" : "signature.who.identifier.period.start",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.period.end",
+                                        "displayName" : "signature.who.identifier.period.end",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.assigner",
+                                        "displayName" : "signature.who.identifier.assigner",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.assigner.reference",
+                                        "displayName" : "signature.who.identifier.assigner.reference",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.assigner.type",
+                                        "displayName" : "signature.who.identifier.assigner.type",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.assigner.identifier",
+                                        "displayName" : "signature.who.identifier.assigner.identifier",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.identifier.assigner.display",
+                                        "displayName" : "signature.who.identifier.assigner.display",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.who.display",
+                                        "displayName" : "signature.who.display",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf",
+                                        "displayName" : "signature.onBehalfOf",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.reference",
+                                        "displayName" : "signature.onBehalfOf.reference",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.type",
+                                        "displayName" : "signature.onBehalfOf.type",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier",
+                                        "displayName" : "signature.onBehalfOf.identifier",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.use",
+                                        "displayName" : "signature.onBehalfOf.identifier.use",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.type",
+                                        "displayName" : "signature.onBehalfOf.identifier.type",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.type.coding.system",
+                                        "displayName" : "signature.onBehalfOf.identifier.type.coding.system",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.type.coding.version",
+                                        "displayName" : "signature.onBehalfOf.identifier.type.coding.version",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.type.coding.code",
+                                        "displayName" : "signature.onBehalfOf.identifier.type.coding.code",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.type.coding.display",
+                                        "displayName" : "signature.onBehalfOf.identifier.type.coding.display",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.type.coding.userSelected",
+                                        "displayName" : "signature.onBehalfOf.identifier.type.coding.userSelected",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.type.text",
+                                        "displayName" : "signature.onBehalfOf.identifier.type.text",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.system",
+                                        "displayName" : "signature.onBehalfOf.identifier.system",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.value",
+                                        "displayName" : "signature.onBehalfOf.identifier.value",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.period",
+                                        "displayName" : "signature.onBehalfOf.identifier.period",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.period.start",
+                                        "displayName" : "signature.onBehalfOf.identifier.period.start",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.period.end",
+                                        "displayName" : "signature.onBehalfOf.identifier.period.end",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.assigner",
+                                        "displayName" : "signature.onBehalfOf.identifier.assigner",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.assigner.reference",
+                                        "displayName" : "signature.onBehalfOf.identifier.assigner.reference",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.assigner.type",
+                                        "displayName" : "signature.onBehalfOf.identifier.assigner.type",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.assigner.identifier",
+                                        "displayName" : "signature.onBehalfOf.identifier.assigner.identifier",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.identifier.assigner.display",
+                                        "displayName" : "signature.onBehalfOf.identifier.assigner.display",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.onBehalfOf.display",
+                                        "displayName" : "signature.onBehalfOf.display",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.targetFormat",
+                                        "displayName" : "signature.targetFormat",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.sigFormat",
+                                        "displayName" : "signature.sigFormat",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                },
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "signature.data",
+                                        "displayName" : "signature.data",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleSignature"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

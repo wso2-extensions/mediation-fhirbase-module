@@ -1,0 +1,376 @@
+{
+  "connectorName": "fhirBase",
+  "operationName": "createAnnotation",
+  "title": "Create Annotation",
+  "help": "<h1>Create Annotation</h1> <b>The createAnnotation operation</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type" : "attribute",
+            "value" : {
+              "name" : "search",
+              "displayName" : "Search",
+              "inputType" : "searchBox",
+              "defaultValue" : "",
+              "required" : "false",
+              "helpTip" : "Search for an attribute using the display name"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "Basic",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "objectId",
+              "displayName": "Object ID",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "The object ID"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "id",
+              "displayName": "id",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "ID of the annotation"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "extension",
+              "displayName": "extension",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Extension of the annotation"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference",
+              "displayName": "authorReference",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Author Reference of the annotation"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.reference",
+              "displayName": "authorReference.reference",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Reference within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.type",
+              "displayName": "authorReference.type",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Type within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier",
+              "displayName": "authorReference.identifier",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.use",
+              "displayName": "authorReference.identifier.use",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Use of the identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.type",
+              "displayName": "authorReference.identifier.type",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Type of the identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.type.coding.system",
+              "displayName": "authorReference.identifier.type.coding.system",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Coding system of the identifier type within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.type.coding.version",
+              "displayName": "authorReference.identifier.type.coding.version",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Coding version of the identifier type within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.type.coding.code",
+              "displayName": "authorReference.identifier.type.coding.code",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Coding code of the identifier type within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.type.coding.display",
+              "displayName": "authorReference.identifier.type.coding.display",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Coding display of the identifier type within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.type.coding.userSelected",
+              "displayName": "authorReference.identifier.type.coding.userSelected",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "User selected coding of the identifier type within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.type.text",
+              "displayName": "authorReference.identifier.type.text",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Text of the identifier type within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.system",
+              "displayName": "authorReference.identifier.system",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "System of the identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.value",
+              "displayName": "authorReference.identifier.value",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Value of the identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.period",
+              "displayName": "authorReference.identifier.period",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Period of the identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.period.start",
+              "displayName": "authorReference.identifier.period.start",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Start period of the identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.period.end",
+              "displayName": "authorReference.identifier.period.end",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "End period of the identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.assigner",
+              "displayName": "authorReference.identifier.assigner",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Assigner of the identifier within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.assigner.reference",
+              "displayName": "authorReference.identifier.assigner.reference",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Reference of the assigner within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.assigner.type",
+              "displayName": "authorReference.identifier.assigner.type",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Type of the assigner within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.assigner.identifier",
+              "displayName": "authorReference.identifier.assigner.identifier",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Identifier of the assigner within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.identifier.assigner.display",
+              "displayName": "authorReference.identifier.assigner.display",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Display of the assigner within the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorReference.display",
+              "displayName": "authorReference.display",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Display of the author reference"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "authorString",
+              "displayName": "authorString",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Author string of the annotation"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "time",
+              "displayName": "time",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Time of the annotation"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "text",
+              "displayName": "text",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Text of the annotation"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "targetObjectId",
+              "displayName": "targetObjectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Target Object ID for the annotation"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "FHIRPath",
+              "displayName": "FHIRPath",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "FHIR Path for the annotation"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

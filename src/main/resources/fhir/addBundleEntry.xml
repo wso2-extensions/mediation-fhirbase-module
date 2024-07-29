@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<!-- Generated on 18-Thu, 06, 2020 18:09:13+0530 -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="addBundleEntry">
+	<parameter name="objectId" />
+
+	<parameter name="entry" />
+	<parameter name="entry.link" />
+	<parameter name="entry.fullUrl" />
+	<parameter name="entry.resource" />
+	<parameter name="entry.search" />
+	<parameter name="entry.search.mode" />
+	<parameter name="entry.search.score" />
+	<parameter name="entry.request" />
+	<parameter name="entry.request.method" />
+	<parameter name="entry.request.url" />
+	<parameter name="entry.request.ifNoneMatch" />
+	<parameter name="entry.request.ifModifiedSince" />
+	<parameter name="entry.request.ifMatch" />
+	<parameter name="entry.request.ifNoneExist" />
+	<parameter name="entry.response" />
+	<parameter name="entry.response.status" />
+	<parameter name="entry.response.location" />
+	<parameter name="entry.response.etag" />
+	<parameter name="entry.response.lastModified" />
+	<parameter name="entry.response.outcome" />
+	<sequence>
+		<class name="org.wso2.healthcare.integration.fhir.operations.FHIRAddBundleEntry" />
+	</sequence>
+</template>

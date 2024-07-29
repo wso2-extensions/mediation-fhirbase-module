@@ -1,0 +1,4017 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createExtension",
+    "title": "Create Extension",
+    "help": "<h1>Create Extension</h1> <b>The createExtension operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "url",
+                            "displayName": "url",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "url"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueBase64Binary",
+                            "displayName": "valueBase64Binary",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueBase64Binary"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueBoolean",
+                            "displayName": "valueBoolean",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueBoolean"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCanonical",
+                            "displayName": "valueCanonical",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCanonical"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCode",
+                            "displayName": "valueCode",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCode"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDate",
+                            "displayName": "valueDate",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDate"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDateTime",
+                            "displayName": "valueDateTime",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDateTime"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDecimal",
+                            "displayName": "valueDecimal",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDecimal"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueId",
+                            "displayName": "valueId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueInstant",
+                            "displayName": "valueInstant",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueInstant"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueInteger",
+                            "displayName": "valueInteger",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueInteger"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMarkdown",
+                            "displayName": "valueMarkdown",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMarkdown"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueOid",
+                            "displayName": "valueOid",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueOid"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valuePositiveInt",
+                            "displayName": "valuePositiveInt",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valuePositiveInt"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueString",
+                            "displayName": "valueString",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueString"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTime",
+                            "displayName": "valueTime",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTime"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueUnsignedInt",
+                            "displayName": "valueUnsignedInt",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueUnsignedInt"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueUri",
+                            "displayName": "valueUri",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueUri"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueUrl",
+                            "displayName": "valueUrl",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueUrl"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueUuid",
+                            "displayName": "valueUuid",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueUuid"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress",
+                            "displayName": "valueAddress",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.use",
+                            "displayName": "valueAddress.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.type",
+                            "displayName": "valueAddress.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.text",
+                            "displayName": "valueAddress.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.line",
+                            "displayName": "valueAddress.line",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.line"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.city",
+                            "displayName": "valueAddress.city",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.city"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.district",
+                            "displayName": "valueAddress.district",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.district"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.state",
+                            "displayName": "valueAddress.state",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.state"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.postalCode",
+                            "displayName": "valueAddress.postalCode",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.postalCode"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.country",
+                            "displayName": "valueAddress.country",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.country"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.period",
+                            "displayName": "valueAddress.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.period.start",
+                            "displayName": "valueAddress.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAddress.period.end",
+                            "displayName": "valueAddress.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAddress.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAge",
+                            "displayName": "valueAge",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAge"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAge.value",
+                            "displayName": "valueAge.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAge.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAge.comparator",
+                            "displayName": "valueAge.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAge.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAge.unit",
+                            "displayName": "valueAge.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAge.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAge.system",
+                            "displayName": "valueAge.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAge.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAge.code",
+                            "displayName": "valueAge.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAge.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation",
+                            "displayName": "valueAnnotation",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference",
+                            "displayName": "valueAnnotation.authorReference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.reference",
+                            "displayName": "valueAnnotation.authorReference.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.type",
+                            "displayName": "valueAnnotation.authorReference.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier",
+                            "displayName": "valueAnnotation.authorReference.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.use",
+                            "displayName": "valueAnnotation.authorReference.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.type",
+                            "displayName": "valueAnnotation.authorReference.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.type.coding.system",
+                            "displayName": "valueAnnotation.authorReference.identifier.type.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.type.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.type.coding.version",
+                            "displayName": "valueAnnotation.authorReference.identifier.type.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.type.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.type.coding.code",
+                            "displayName": "valueAnnotation.authorReference.identifier.type.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.type.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.type.coding.display",
+                            "displayName": "valueAnnotation.authorReference.identifier.type.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.type.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.type.coding.userSelected",
+                            "displayName": "valueAnnotation.authorReference.identifier.type.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.type.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.type.text",
+                            "displayName": "valueAnnotation.authorReference.identifier.type.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.type.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.system",
+                            "displayName": "valueAnnotation.authorReference.identifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.value",
+                            "displayName": "valueAnnotation.authorReference.identifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.period",
+                            "displayName": "valueAnnotation.authorReference.identifier.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.period.start",
+                            "displayName": "valueAnnotation.authorReference.identifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.period.end",
+                            "displayName": "valueAnnotation.authorReference.identifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.assigner",
+                            "displayName": "valueAnnotation.authorReference.identifier.assigner",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.assigner"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.assigner.reference",
+                            "displayName": "valueAnnotation.authorReference.identifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.assigner.type",
+                            "displayName": "valueAnnotation.authorReference.identifier.assigner.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.assigner.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.assigner.identifier",
+                            "displayName": "valueAnnotation.authorReference.identifier.assigner.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.assigner.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.identifier.assigner.display",
+                            "displayName": "valueAnnotation.authorReference.identifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.identifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorReference.display",
+                            "displayName": "valueAnnotation.authorReference.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorReference.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.authorString",
+                            "displayName": "valueAnnotation.authorString",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.authorString"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.time",
+                            "displayName": "valueAnnotation.time",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.time"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAnnotation.text",
+                            "displayName": "valueAnnotation.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAnnotation.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment",
+                            "displayName": "valueAttachment",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment.contentType",
+                            "displayName": "valueAttachment.contentType",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment.contentType"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment.language",
+                            "displayName": "valueAttachment.language",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment.language"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment.data",
+                            "displayName": "valueAttachment.data",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment.data"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment.url",
+                            "displayName": "valueAttachment.url",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment.url"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment.size",
+                            "displayName": "valueAttachment.size",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment.size"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment.hash",
+                            "displayName": "valueAttachment.hash",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment.hash"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment.title",
+                            "displayName": "valueAttachment.title",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment.title"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueAttachment.creation",
+                            "displayName": "valueAttachment.creation",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueAttachment.creation"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCodeableConcept",
+                            "displayName": "valueCodeableConcept",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCodeableConcept"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCodeableConcept.coding.system",
+                            "displayName": "valueCodeableConcept.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCodeableConcept.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCodeableConcept.coding.version",
+                            "displayName": "valueCodeableConcept.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCodeableConcept.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCodeableConcept.coding.code",
+                            "displayName": "valueCodeableConcept.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCodeableConcept.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCodeableConcept.coding.display",
+                            "displayName": "valueCodeableConcept.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCodeableConcept.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCodeableConcept.coding.userSelected",
+                            "displayName": "valueCodeableConcept.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCodeableConcept.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCodeableConcept.coding.custom",
+                            "displayName": "valueCodeableConcept.coding.custom",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCodeableConcept.coding.custom"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCoding",
+                            "displayName": "valueCoding",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCoding"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCoding.system",
+                            "displayName": "valueCoding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCoding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCoding.version",
+                            "displayName": "valueCoding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCoding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCoding.code",
+                            "displayName": "valueCoding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCoding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCoding.display",
+                            "displayName": "valueCoding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCoding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCoding.userSelected",
+                            "displayName": "valueCoding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCoding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactPoint",
+                            "displayName": "valueContactPoint",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactPoint"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactPoint.system",
+                            "displayName": "valueContactPoint.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactPoint.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactPoint.value",
+                            "displayName": "valueContactPoint.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactPoint.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactPoint.use",
+                            "displayName": "valueContactPoint.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactPoint.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactPoint.rank",
+                            "displayName": "valueContactPoint.rank",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactPoint.rank"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactPoint.period",
+                            "displayName": "valueContactPoint.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactPoint.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactPoint.period.start",
+                            "displayName": "valueContactPoint.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactPoint.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactPoint.period.end",
+                            "displayName": "valueContactPoint.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactPoint.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCount",
+                            "displayName": "valueCount",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCount"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCount.value",
+                            "displayName": "valueCount.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCount.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCount.comparator",
+                            "displayName": "valueCount.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCount.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCount.unit",
+                            "displayName": "valueCount.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCount.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCount.system",
+                            "displayName": "valueCount.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCount.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueCount.code",
+                            "displayName": "valueCount.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueCount.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDistance",
+                            "displayName": "valueDistance",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDistance"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDistance.value",
+                            "displayName": "valueDistance.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDistance.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDistance.comparator",
+                            "displayName": "valueDistance.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDistance.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDistance.unit",
+                            "displayName": "valueDistance.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDistance.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDistance.system",
+                            "displayName": "valueDistance.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDistance.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDistance.code",
+                            "displayName": "valueDistance.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDistance.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDuration",
+                            "displayName": "valueDuration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDuration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDuration.value",
+                            "displayName": "valueDuration.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDuration.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDuration.comparator",
+                            "displayName": "valueDuration.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDuration.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDuration.unit",
+                            "displayName": "valueDuration.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDuration.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDuration.system",
+                            "displayName": "valueDuration.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDuration.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueDuration.code",
+                            "displayName": "valueDuration.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueDuration.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName",
+                            "displayName": "valueHumanName",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.use",
+                            "displayName": "valueHumanName.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.text",
+                            "displayName": "valueHumanName.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.family",
+                            "displayName": "valueHumanName.family",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.family"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.given",
+                            "displayName": "valueHumanName.given",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.given"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.prefix",
+                            "displayName": "valueHumanName.prefix",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.prefix"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.suffix",
+                            "displayName": "valueHumanName.suffix",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.suffix"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.period",
+                            "displayName": "valueHumanName.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.period.start",
+                            "displayName": "valueHumanName.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueHumanName.period.end",
+                            "displayName": "valueHumanName.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueHumanName.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier",
+                            "displayName": "valueIdentifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.use",
+                            "displayName": "valueIdentifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.type",
+                            "displayName": "valueIdentifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.type.coding.system",
+                            "displayName": "valueIdentifier.type.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.type.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.type.coding.version",
+                            "displayName": "valueIdentifier.type.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.type.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.type.coding.code",
+                            "displayName": "valueIdentifier.type.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.type.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.type.coding.display",
+                            "displayName": "valueIdentifier.type.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.type.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.type.coding.userSelected",
+                            "displayName": "valueIdentifier.type.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.type.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.type.text",
+                            "displayName": "valueIdentifier.type.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.type.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.system",
+                            "displayName": "valueIdentifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.value",
+                            "displayName": "valueIdentifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.period",
+                            "displayName": "valueIdentifier.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.period.start",
+                            "displayName": "valueIdentifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.period.end",
+                            "displayName": "valueIdentifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.assigner",
+                            "displayName": "valueIdentifier.assigner",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.assigner"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.assigner.reference",
+                            "displayName": "valueIdentifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.assigner.type",
+                            "displayName": "valueIdentifier.assigner.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.assigner.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.assigner.identifier.use",
+                            "displayName": "valueIdentifier.assigner.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.assigner.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.assigner.identifier.type",
+                            "displayName": "valueIdentifier.assigner.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.assigner.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.assigner.identifier.period",
+                            "displayName": "valueIdentifier.assigner.identifier.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.assigner.identifier.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.assigner.identifier.assigner",
+                            "displayName": "valueIdentifier.assigner.identifier.assigner",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.assigner.identifier.assigner"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueIdentifier.assigner.display",
+                            "displayName": "valueIdentifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueIdentifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMoney",
+                            "displayName": "valueMoney",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMoney"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMoney.value",
+                            "displayName": "valueMoney.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMoney.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMoney.currency",
+                            "displayName": "valueMoney.currency",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMoney.currency"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valuePeriod",
+                            "displayName": "valuePeriod",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valuePeriod"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valuePeriod.start",
+                            "displayName": "valuePeriod.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valuePeriod.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valuePeriod.end",
+                            "displayName": "valuePeriod.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valuePeriod.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueQuantity",
+                            "displayName": "valueQuantity",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueQuantity"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueQuantity.value",
+                            "displayName": "valueQuantity.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueQuantity.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueQuantity.comparator",
+                            "displayName": "valueQuantity.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueQuantity.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueQuantity.unit",
+                            "displayName": "valueQuantity.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueQuantity.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueQuantity.system",
+                            "displayName": "valueQuantity.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueQuantity.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueQuantity.code",
+                            "displayName": "valueQuantity.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueQuantity.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange",
+                            "displayName": "valueRange",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.low",
+                            "displayName": "valueRange.low",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.low"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.low.value",
+                            "displayName": "valueRange.low.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.low.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.low.unit",
+                            "displayName": "valueRange.low.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.low.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.low.system",
+                            "displayName": "valueRange.low.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.low.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.low.code",
+                            "displayName": "valueRange.low.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.low.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.high",
+                            "displayName": "valueRange.high",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.high"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.high.value",
+                            "displayName": "valueRange.high.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.high.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.high.unit",
+                            "displayName": "valueRange.high.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.high.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.high.system",
+                            "displayName": "valueRange.high.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.high.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRange.high.code",
+                            "displayName": "valueRange.high.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRange.high.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio",
+                            "displayName": "valueRatio",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.numerator",
+                            "displayName": "valueRatio.numerator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.numerator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.numerator.value",
+                            "displayName": "valueRatio.numerator.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.numerator.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.numerator.comparator",
+                            "displayName": "valueRatio.numerator.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.numerator.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.numerator.unit",
+                            "displayName": "valueRatio.numerator.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.numerator.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.numerator.system",
+                            "displayName": "valueRatio.numerator.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.numerator.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.numerator.code",
+                            "displayName": "valueRatio.numerator.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.numerator.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.denominator",
+                            "displayName": "valueRatio.denominator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.denominator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.denominator.value",
+                            "displayName": "valueRatio.denominator.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.denominator.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.denominator.comparator",
+                            "displayName": "valueRatio.denominator.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.denominator.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.denominator.unit",
+                            "displayName": "valueRatio.denominator.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.denominator.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.denominator.system",
+                            "displayName": "valueRatio.denominator.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.denominator.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueRatio.denominator.code",
+                            "displayName": "valueRatio.denominator.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueRatio.denominator.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference",
+                            "displayName": "valueReference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.reference",
+                            "displayName": "valueReference.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.type",
+                            "displayName": "valueReference.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier",
+                            "displayName": "valueReference.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier.use",
+                            "displayName": "valueReference.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier.type",
+                            "displayName": "valueReference.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier.system",
+                            "displayName": "valueReference.identifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier.value",
+                            "displayName": "valueReference.identifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier.period.start",
+                            "displayName": "valueReference.identifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier.period.end",
+                            "displayName": "valueReference.identifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier.assigner.reference",
+                            "displayName": "valueReference.identifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.identifier.assigner.display",
+                            "displayName": "valueReference.identifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.identifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueReference.display",
+                            "displayName": "valueReference.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueReference.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData",
+                            "displayName": "valueSampledData",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.origin.value",
+                            "displayName": "valueSampledData.origin.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.origin.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.origin.unit",
+                            "displayName": "valueSampledData.origin.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.origin.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.origin.system",
+                            "displayName": "valueSampledData.origin.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.origin.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.origin.code",
+                            "displayName": "valueSampledData.origin.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.origin.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.period",
+                            "displayName": "valueSampledData.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.factor",
+                            "displayName": "valueSampledData.factor",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.factor"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.lowerLimit",
+                            "displayName": "valueSampledData.lowerLimit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.lowerLimit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.upperLimit",
+                            "displayName": "valueSampledData.upperLimit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.upperLimit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.dimensions",
+                            "displayName": "valueSampledData.dimensions",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.dimensions"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSampledData.data",
+                            "displayName": "valueSampledData.data",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSampledData.data"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature",
+                            "displayName": "valueSignature",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.type.system",
+                            "displayName": "valueSignature.type.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.type.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.type.version",
+                            "displayName": "valueSignature.type.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.type.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.type.code",
+                            "displayName": "valueSignature.type.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.type.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.type.display",
+                            "displayName": "valueSignature.type.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.type.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.type.userSelected",
+                            "displayName": "valueSignature.type.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.type.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.when",
+                            "displayName": "valueSignature.when",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.when"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who",
+                            "displayName": "valueSignature.who",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.reference",
+                            "displayName": "valueSignature.who.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.type",
+                            "displayName": "valueSignature.who.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier",
+                            "displayName": "valueSignature.who.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.use",
+                            "displayName": "valueSignature.who.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.type",
+                            "displayName": "valueSignature.who.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.type.coding.system",
+                            "displayName": "valueSignature.who.identifier.type.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.type.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.type.coding.version",
+                            "displayName": "valueSignature.who.identifier.type.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.type.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.type.coding.code",
+                            "displayName": "valueSignature.who.identifier.type.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.type.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.type.coding.display",
+                            "displayName": "valueSignature.who.identifier.type.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.type.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.type.coding.userSelected",
+                            "displayName": "valueSignature.who.identifier.type.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.type.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.type.text",
+                            "displayName": "valueSignature.who.identifier.type.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.type.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.system",
+                            "displayName": "valueSignature.who.identifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.value",
+                            "displayName": "valueSignature.who.identifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.period",
+                            "displayName": "valueSignature.who.identifier.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.period.start",
+                            "displayName": "valueSignature.who.identifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.period.end",
+                            "displayName": "valueSignature.who.identifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.assigner",
+                            "displayName": "valueSignature.who.identifier.assigner",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.assigner"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.assigner.reference",
+                            "displayName": "valueSignature.who.identifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.assigner.type",
+                            "displayName": "valueSignature.who.identifier.assigner.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.assigner.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.assigner.identifier",
+                            "displayName": "valueSignature.who.identifier.assigner.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.assigner.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.identifier.assigner.display",
+                            "displayName": "valueSignature.who.identifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.identifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.who.display",
+                            "displayName": "valueSignature.who.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.who.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf",
+                            "displayName": "valueSignature.onBehalfOf",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.reference",
+                            "displayName": "valueSignature.onBehalfOf.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.type",
+                            "displayName": "valueSignature.onBehalfOf.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier",
+                            "displayName": "valueSignature.onBehalfOf.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.use",
+                            "displayName": "valueSignature.onBehalfOf.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.type",
+                            "displayName": "valueSignature.onBehalfOf.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.type.coding.system",
+                            "displayName": "valueSignature.onBehalfOf.identifier.type.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.type.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.type.coding.version",
+                            "displayName": "valueSignature.onBehalfOf.identifier.type.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.type.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.type.coding.code",
+                            "displayName": "valueSignature.onBehalfOf.identifier.type.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.type.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.type.coding.display",
+                            "displayName": "valueSignature.onBehalfOf.identifier.type.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.type.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.type.coding.userSelected",
+                            "displayName": "valueSignature.onBehalfOf.identifier.type.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.type.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.type.text",
+                            "displayName": "valueSignature.onBehalfOf.identifier.type.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.type.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.system",
+                            "displayName": "valueSignature.onBehalfOf.identifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.value",
+                            "displayName": "valueSignature.onBehalfOf.identifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.period",
+                            "displayName": "valueSignature.onBehalfOf.identifier.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.period.start",
+                            "displayName": "valueSignature.onBehalfOf.identifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.period.end",
+                            "displayName": "valueSignature.onBehalfOf.identifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.assigner",
+                            "displayName": "valueSignature.onBehalfOf.identifier.assigner",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.assigner"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.assigner.reference",
+                            "displayName": "valueSignature.onBehalfOf.identifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.assigner.type",
+                            "displayName": "valueSignature.onBehalfOf.identifier.assigner.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.assigner.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.assigner.identifier",
+                            "displayName": "valueSignature.onBehalfOf.identifier.assigner.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.assigner.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.identifier.assigner.display",
+                            "displayName": "valueSignature.onBehalfOf.identifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.identifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.onBehalfOf.display",
+                            "displayName": "valueSignature.onBehalfOf.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.onBehalfOf.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.targetFormat",
+                            "displayName": "valueSignature.targetFormat",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.targetFormat"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.sigFormat",
+                            "displayName": "valueSignature.sigFormat",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.sigFormat"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueSignature.data",
+                            "displayName": "valueSignature.data",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueSignature.data"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming",
+                            "displayName": "valueTiming",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.event",
+                            "displayName": "valueTiming.event",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.event"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat",
+                            "displayName": "valueTiming.repeat",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsDuration",
+                            "displayName": "valueTiming.repeat.boundsDuration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsDuration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsDuration.value",
+                            "displayName": "valueTiming.repeat.boundsDuration.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsDuration.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsDuration.comparator",
+                            "displayName": "valueTiming.repeat.boundsDuration.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsDuration.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsDuration.unit",
+                            "displayName": "valueTiming.repeat.boundsDuration.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsDuration.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsDuration.system",
+                            "displayName": "valueTiming.repeat.boundsDuration.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsDuration.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsDuration.code",
+                            "displayName": "valueTiming.repeat.boundsDuration.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsDuration.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange",
+                            "displayName": "valueTiming.repeat.boundsRange",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.low",
+                            "displayName": "valueTiming.repeat.boundsRange.low",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.low"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.low.value",
+                            "displayName": "valueTiming.repeat.boundsRange.low.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.low.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.low.unit",
+                            "displayName": "valueTiming.repeat.boundsRange.low.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.low.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.low.system",
+                            "displayName": "valueTiming.repeat.boundsRange.low.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.low.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.low.code",
+                            "displayName": "valueTiming.repeat.boundsRange.low.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.low.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.high",
+                            "displayName": "valueTiming.repeat.boundsRange.high",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.high"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.high.value",
+                            "displayName": "valueTiming.repeat.boundsRange.high.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.high.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.high.unit",
+                            "displayName": "valueTiming.repeat.boundsRange.high.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.high.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.high.system",
+                            "displayName": "valueTiming.repeat.boundsRange.high.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.high.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsRange.high.code",
+                            "displayName": "valueTiming.repeat.boundsRange.high.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsRange.high.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsPeriod",
+                            "displayName": "valueTiming.repeat.boundsPeriod",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsPeriod"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsPeriod.start",
+                            "displayName": "valueTiming.repeat.boundsPeriod.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsPeriod.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.boundsPeriod.end",
+                            "displayName": "valueTiming.repeat.boundsPeriod.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.boundsPeriod.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.count",
+                            "displayName": "valueTiming.repeat.count",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.count"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.countMax",
+                            "displayName": "valueTiming.repeat.countMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.countMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.duration",
+                            "displayName": "valueTiming.repeat.duration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.duration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.durationMax",
+                            "displayName": "valueTiming.repeat.durationMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.durationMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.durationUnit",
+                            "displayName": "valueTiming.repeat.durationUnit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.durationUnit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.frequency",
+                            "displayName": "valueTiming.repeat.frequency",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.frequency"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.frequencyMax",
+                            "displayName": "valueTiming.repeat.frequencyMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.frequencyMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.period",
+                            "displayName": "valueTiming.repeat.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.periodMax",
+                            "displayName": "valueTiming.repeat.periodMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.periodMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.periodUnit",
+                            "displayName": "valueTiming.repeat.periodUnit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.periodUnit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.dayOfWeek",
+                            "displayName": "valueTiming.repeat.dayOfWeek",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.dayOfWeek"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.timeOfDay",
+                            "displayName": "valueTiming.repeat.timeOfDay",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.timeOfDay"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.when",
+                            "displayName": "valueTiming.repeat.when",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.when"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.repeat.offset",
+                            "displayName": "valueTiming.repeat.offset",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.repeat.offset"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.code",
+                            "displayName": "valueTiming.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.code.coding.system",
+                            "displayName": "valueTiming.code.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.code.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.code.coding.version",
+                            "displayName": "valueTiming.code.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.code.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.code.coding.code",
+                            "displayName": "valueTiming.code.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.code.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.code.coding.display",
+                            "displayName": "valueTiming.code.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.code.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.code.coding.userSelected",
+                            "displayName": "valueTiming.code.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.code.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueTiming.code.text",
+                            "displayName": "valueTiming.code.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueTiming.code.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail",
+                            "displayName": "valueContactDetail",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.name",
+                            "displayName": "valueContactDetail.name",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.name"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.telecom",
+                            "displayName": "valueContactDetail.telecom",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.telecom"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.telecom.system",
+                            "displayName": "valueContactDetail.telecom.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.telecom.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.telecom.value",
+                            "displayName": "valueContactDetail.telecom.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.telecom.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.telecom.use",
+                            "displayName": "valueContactDetail.telecom.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.telecom.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.telecom.rank",
+                            "displayName": "valueContactDetail.telecom.rank",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.telecom.rank"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.telecom.period",
+                            "displayName": "valueContactDetail.telecom.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.telecom.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.telecom.period.start",
+                            "displayName": "valueContactDetail.telecom.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.telecom.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContactDetail.telecom.period.end",
+                            "displayName": "valueContactDetail.telecom.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContactDetail.telecom.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor",
+                            "displayName": "valueContributor",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.type",
+                            "displayName": "valueContributor.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.name",
+                            "displayName": "valueContributor.name",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.name"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact",
+                            "displayName": "valueContributor.contact",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.name",
+                            "displayName": "valueContributor.contact.name",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.name"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.telecom",
+                            "displayName": "valueContributor.contact.telecom",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.telecom"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.telecom.system",
+                            "displayName": "valueContributor.contact.telecom.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.telecom.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.telecom.value",
+                            "displayName": "valueContributor.contact.telecom.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.telecom.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.telecom.use",
+                            "displayName": "valueContributor.contact.telecom.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.telecom.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.telecom.rank",
+                            "displayName": "valueContributor.contact.telecom.rank",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.telecom.rank"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.telecom.period",
+                            "displayName": "valueContributor.contact.telecom.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.telecom.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.telecom.period.start",
+                            "displayName": "valueContributor.contact.telecom.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.telecom.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueContributor.contact.telecom.period.end",
+                            "displayName": "valueContributor.contact.telecom.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueContributor.contact.telecom.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueExpression",
+                            "displayName": "valueExpression",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueExpression"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueExpression.description",
+                            "displayName": "valueExpression.description",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueExpression.description"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueExpression.name",
+                            "displayName": "valueExpression.name",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueExpression.name"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueExpression.language",
+                            "displayName": "valueExpression.language",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueExpression.language"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueExpression.expression",
+                            "displayName": "valueExpression.expression",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueExpression.expression"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueExpression.reference",
+                            "displayName": "valueExpression.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueExpression.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta",
+                            "displayName": "valueMeta",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.versionId",
+                            "displayName": "valueMeta.versionId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.versionId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.source",
+                            "displayName": "valueMeta.source",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.source"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.profile",
+                            "displayName": "valueMeta.profile",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.profile"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security",
+                            "displayName": "valueMeta.security",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security.code",
+                            "displayName": "valueMeta.security.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security.valueSet",
+                            "displayName": "valueMeta.security.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security.coding.system",
+                            "displayName": "valueMeta.security.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security.coding.version",
+                            "displayName": "valueMeta.security.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security.coding.code",
+                            "displayName": "valueMeta.security.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security.coding.display",
+                            "displayName": "valueMeta.security.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security.coding.userSelected",
+                            "displayName": "valueMeta.security.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.security.text",
+                            "displayName": "valueMeta.security.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.security.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag",
+                            "displayName": "valueMeta.tag",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag.code",
+                            "displayName": "valueMeta.tag.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag.valueSet",
+                            "displayName": "valueMeta.tag.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag.coding.system",
+                            "displayName": "valueMeta.tag.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag.coding.version",
+                            "displayName": "valueMeta.tag.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag.coding.code",
+                            "displayName": "valueMeta.tag.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag.coding.display",
+                            "displayName": "valueMeta.tag.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag.coding.userSelected",
+                            "displayName": "valueMeta.tag.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "valueMeta.tag.text",
+                            "displayName": "valueMeta.tag.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "valueMeta.tag.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

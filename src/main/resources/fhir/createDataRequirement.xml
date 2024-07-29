@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createDataRequirement">
+    <parameter name="objectId"/>
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+
+    <!-- DataRequirement related fields-->
+    <parameter name="type"/>
+    <parameter name="profile"/>
+    <parameter name="subjectCodeableConcept"/>
+    <parameter name="subjectCodeableConcept.code"/>
+    <parameter name="subjectCodeableConcept.valueSet"/>
+    <parameter name="subjectCodeableConcept.coding.system"/>
+    <parameter name="subjectCodeableConcept.coding.version"/>
+    <parameter name="subjectCodeableConcept.coding.code"/>
+    <parameter name="subjectCodeableConcept.coding.display"/>
+    <parameter name="subjectCodeableConcept.coding.userSelected"/>
+    <parameter name="subjectCodeableConcept.text"/>
+    <parameter name="subjectReference"/>
+    <parameter name="subjectReference.reference"/>
+    <parameter name="subjectReference.type"/>
+    <parameter name="subjectReference.identifier"/>
+    <parameter name="subjectReference.identifier.use"/>
+    <parameter name="subjectReference.identifier.type"/>
+    <parameter name="subjectReference.identifier.system"/>
+    <parameter name="subjectReference.identifier.value"/>
+    <parameter name="subjectReference.identifier.period.start"/>
+    <parameter name="subjectReference.identifier.period.end"/>
+    <parameter name="subjectReference.identifier.assigner.reference"/>
+    <parameter name="subjectReference.identifier.assigner.display"/>
+    <parameter name="subjectReference.display"/>
+    <parameter name="mustSupport"/>
+    <parameter name="codeFilter"/>
+    <parameter name="codeFilter.path"/>
+    <parameter name="codeFilter.searchParam"/>
+    <parameter name="codeFilter.valueSet"/>
+    <parameter name="codeFilter.code"/>
+    <parameter name="codeFilter.code.system"/>
+    <parameter name="codeFilter.code.version"/>
+    <parameter name="codeFilter.code.code"/>
+    <parameter name="codeFilter.code.display"/>
+    <parameter name="codeFilter.code.userSelected"/>
+    <parameter name="dateFilter"/>
+    <parameter name="dateFilter.path"/>
+    <parameter name="dateFilter.searchParam"/>
+    <parameter name="dateFilter.valueDateTime"/>
+    <parameter name="dateFilter.valuePeriod"/>
+    <parameter name="dateFilter.valuePeriod.start"/>
+    <parameter name="dateFilter.valuePeriod.end"/>
+    <parameter name="dateFilter.valueDuration"/>
+    <parameter name="dateFilter.valueDuration.value"/>
+    <parameter name="dateFilter.valueDuration.comparator"/>
+    <parameter name="dateFilter.valueDuration.unit"/>
+    <parameter name="dateFilter.valueDuration.system"/>
+    <parameter name="dateFilter.valueDuration.code"/>
+    <parameter name="limit"/>
+    <parameter name="sort"/>
+    <parameter name="sort.path"/>
+    <parameter name="sort.direction"/>
+
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateMetaDataType">
+            <property name="dataType" value="DataRequirement"/>
+        </class>
+    </sequence>
+</template>

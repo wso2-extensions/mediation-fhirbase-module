@@ -1,0 +1,222 @@
+{
+  "connectorName": "fhirBase",
+  "operationName": "createContributor",
+  "title": "Create Contributor",
+  "help": "<h1>Create Contributor</h1> <b>The createContributor operation</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "search",
+              "displayName": "search",
+              "inputType": "searchBox",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Search for an attribute using the display name"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "Basic",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "objectId",
+              "displayName": "objectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Object ID of the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "id",
+              "displayName": "id",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "ID of the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "extension",
+              "displayName": "extension",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Extension of the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "type",
+              "displayName": "type",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Type of the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "name",
+              "displayName": "name",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Name of the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact",
+              "displayName": "contact",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Contact of the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.name",
+              "displayName": "contact.name",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Contact name of the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.telecom",
+              "displayName": "contact.telecom",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Telecom of the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.telecom.system",
+              "displayName": "contact.telecom.system",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "System of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.telecom.value",
+              "displayName": "contact.telecom.value",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Value of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.telecom.use",
+              "displayName": "contact.telecom.use",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Use of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.telecom.rank",
+              "displayName": "contact.telecom.rank",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Rank of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.telecom.period",
+              "displayName": "contact.telecom.period",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Period of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.telecom.period.start",
+              "displayName": "contact.telecom.period.start",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Start period of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "contact.telecom.period.end",
+              "displayName": "contact.telecom.period.end",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "End period of the telecom"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "targetObjectId",
+              "displayName": "targetObjectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Target Object ID for the contributor"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "FHIRPath",
+              "displayName": "FHIRPath",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "FHIR Path for the contributor"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

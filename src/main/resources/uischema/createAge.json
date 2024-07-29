@@ -1,0 +1,153 @@
+{
+  "connectorName" : "fhirBase",
+  "operationName" : "createAge",
+  "title" : "CreateAge",
+  "help" : "<h1>CreateAge</h1> <b>The createAge operation</b>",
+  "elements" : [
+    {
+      "type" : "attributeGroup",
+      "value" : {
+        "groupName" : "General",
+        "elements" : [
+          {
+            "type" : "attributeGroup",
+            "value" : {
+              "groupName" : "Search",
+              "elements" : [
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "search",
+                    "displayName" : "Search",
+                    "inputType" : "searchBox",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "Search for an attribute using the display name"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type" : "attributeGroup",
+            "value" : {
+              "groupName" : "Basic",
+              "elements" : [
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "objectId",
+                    "displayName" : "objectId",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "id",
+                    "displayName" : "id",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "extension",
+                    "displayName" : "extension",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "value",
+                    "displayName" : "value",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "comparator",
+                    "displayName" : "comparator",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "unit",
+                    "displayName" : "unit",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "system",
+                    "displayName" : "system",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "code",
+                    "displayName" : "code",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "targetObjectId",
+                    "displayName" : "targetObjectId",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "FHIRPath",
+                    "displayName" : "FHIRPath",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAge"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

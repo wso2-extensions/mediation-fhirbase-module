@@ -1,0 +1,321 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createMeta",
+    "title": "Create Meta",
+    "help": "<h1>Create Meta</h1> <b>The createMeta operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "versionId",
+                            "displayName": "versionId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "versionId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "source",
+                            "displayName": "source",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "source"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "profile",
+                            "displayName": "profile",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "profile"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security",
+                            "displayName": "security",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security.code",
+                            "displayName": "security.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security.valueSet",
+                            "displayName": "security.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security.coding.system",
+                            "displayName": "security.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security.coding.version",
+                            "displayName": "security.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security.coding.code",
+                            "displayName": "security.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security.coding.display",
+                            "displayName": "security.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security.coding.userSelected",
+                            "displayName": "security.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "security.text",
+                            "displayName": "security.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "security.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag",
+                            "displayName": "tag",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag.code",
+                            "displayName": "tag.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag.valueSet",
+                            "displayName": "tag.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag.coding.system",
+                            "displayName": "tag.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag.coding.version",
+                            "displayName": "tag.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag.coding.code",
+                            "displayName": "tag.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag.coding.display",
+                            "displayName": "tag.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag.coding.userSelected",
+                            "displayName": "tag.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "tag.text",
+                            "displayName": "tag.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "tag.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

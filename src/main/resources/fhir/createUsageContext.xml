@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createUsageContext">
+    <parameter name="objectId"/>
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+
+    <!-- UsageContext related fields-->
+    <parameter name="code" />
+
+    <parameter name="valueCodeableConcept" />
+    <parameter name="valueCodeableConcept.code"/>
+    <parameter name="valueCodeableConcept.valueSet"/>
+    <parameter name="valueCodeableConcept.coding.system"/>
+    <parameter name="valueCodeableConcept.coding.version"/>
+    <parameter name="valueCodeableConcept.coding.code"/>
+    <parameter name="valueCodeableConcept.coding.display"/>
+    <parameter name="valueCodeableConcept.coding.userSelected"/>
+    <parameter name="valueCodeableConcept.text"/>
+
+    <parameter name="valueQuantity" />
+    <parameter name="valueQuantity.value" />
+    <parameter name="valueQuantity.comparator" />
+    <parameter name="valueQuantity.unit" />
+    <parameter name="valueQuantity.system" />
+    <parameter name="valueQuantity.code" />
+
+    <parameter name="valueRange" />
+    <parameter name="valueRange.low" />
+    <parameter name="valueRange.low.value" />
+    <parameter name="valueRange.low.unit" />
+    <parameter name="valueRange.low.system" />
+    <parameter name="valueRange.low.code" />
+    <parameter name="valueRange.high" />
+    <parameter name="valueRange.high.value" />
+    <parameter name="valueRange.high.unit" />
+    <parameter name="valueRange.high.system" />
+    <parameter name="valueRange.high.code" />
+
+    <parameter name="valueReference" />
+    <parameter name="valueReference.reference"/>
+    <parameter name="valueReference.type"/>
+    <parameter name="valueReference.identifier"/>
+    <parameter name="valueReference.identifier.use"/>
+    <parameter name="valueReference.identifier.type"/>
+    <parameter name="valueReference.identifier.system"/>
+    <parameter name="valueReference.identifier.value"/>
+    <parameter name="valueReference.identifier.period.start"/>
+    <parameter name="valueReference.identifier.period.end"/>
+    <parameter name="valueReference.identifier.assigner.reference"/>
+    <parameter name="valueReference.identifier.assigner.display"/>
+    <parameter name="valueReference.display"/>
+
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateMetaDataType">
+            <property name="dataType" value="UsageContext"/>
+        </class>
+    </sequence>
+</template>

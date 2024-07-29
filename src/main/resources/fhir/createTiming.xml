@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createTiming">
+    <parameter name="objectId"/>
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+    <!-- timing related parameters -->
+    <parameter name="event" />
+    <parameter name="repeat" />
+    <parameter name="repeat.boundsDuration" />
+    <parameter name="repeat.boundsDuration.value" />
+    <parameter name="repeat.boundsDuration.comparator" />
+    <parameter name="repeat.boundsDuration.unit" />
+    <parameter name="repeat.boundsDuration.system" />
+    <parameter name="repeat.boundsDuration.code" />
+
+    <parameter name="repeat.boundsRange" />
+    <parameter name="repeat.boundsRange.low" />
+    <parameter name="repeat.boundsRange.low.value" />
+    <parameter name="repeat.boundsRange.low.unit" />
+    <parameter name="repeat.boundsRange.low.system" />
+    <parameter name="repeat.boundsRange.low.code" />
+    <parameter name="repeat.boundsRange.high" />
+    <parameter name="repeat.boundsRange.high.value" />
+    <parameter name="repeat.boundsRange.high.unit" />
+    <parameter name="repeat.boundsRange.high.system" />
+    <parameter name="repeat.boundsRange.high.code" />
+
+    <parameter name="repeat.boundsPeriod" />
+    <parameter name="repeat.boundsPeriod.start" />
+    <parameter name="repeat.boundsPeriod.end" />
+
+    <parameter name="repeat.count" />
+    <parameter name="repeat.countMax" />
+    <parameter name="repeat.duration" />
+    <parameter name="repeat.durationMax" />
+    <parameter name="repeat.durationUnit" />
+    <parameter name="repeat.frequency" />
+    <parameter name="repeat.frequencyMax" />
+    <parameter name="repeat.period" />
+    <parameter name="repeat.periodMax" />
+    <parameter name="repeat.periodUnit" />
+    <parameter name="repeat.dayOfWeek" />
+    <parameter name="repeat.timeOfDay" />
+    <parameter name="repeat.when" />
+    <parameter name="repeat.offset" />
+    <parameter name="code" />
+    <parameter name="code.coding.system" />
+    <parameter name="code.coding.version" />
+    <parameter name="code.coding.code" />
+    <parameter name="code.coding.display" />
+    <parameter name="code.coding.userSelected" />
+    <parameter name="code.text" />
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateGeneralPurposeDataType">
+            <property name="dataType" value="Timing"/>
+        </class>
+    </sequence>
+</template>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createMeta">
+    <parameter name="objectId"/>
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+
+    <!--Meta related parameters-->
+    <parameter name="versionId"/>
+    <parameter name="source"/>
+    <parameter name="profile"/>
+    <parameter name="security"/>
+    <parameter name="security.code"/>
+    <parameter name="security.valueSet"/>
+    <parameter name="security.coding.system"/>
+    <parameter name="security.coding.version"/>
+    <parameter name="security.coding.code"/>
+    <parameter name="security.coding.display"/>
+    <parameter name="security.coding.userSelected"/>
+    <parameter name="security.text"/>
+    <parameter name="tag"/>
+    <parameter name="tag.code"/>
+    <parameter name="tag.valueSet"/>
+    <parameter name="tag.coding.system"/>
+    <parameter name="tag.coding.version"/>
+    <parameter name="tag.coding.code"/>
+    <parameter name="tag.coding.display"/>
+    <parameter name="tag.coding.userSelected"/>
+    <parameter name="tag.text"/>
+
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateSpecialPurposeDataType">
+            <property name="dataType" value="Meta"/>
+        </class>
+    </sequence>
+</template>

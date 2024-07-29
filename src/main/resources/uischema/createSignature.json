@@ -1,0 +1,695 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createSignature",
+    "title": "Create Signature",
+    "help": "<h1>Create Signature</h1> <b>The createSignature operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "type.system",
+                            "displayName": "type.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "type.version",
+                            "displayName": "type.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "type.code",
+                            "displayName": "type.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "type.display",
+                            "displayName": "type.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "type.userSelected",
+                            "displayName": "type.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "when",
+                            "displayName": "when",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "when"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who",
+                            "displayName": "who",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.reference",
+                            "displayName": "who.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.type",
+                            "displayName": "who.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier",
+                            "displayName": "who.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.use",
+                            "displayName": "who.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.type",
+                            "displayName": "who.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.type.coding.system",
+                            "displayName": "who.identifier.type.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.type.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.type.coding.version",
+                            "displayName": "who.identifier.type.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.type.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.type.coding.code",
+                            "displayName": "who.identifier.type.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.type.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.type.coding.display",
+                            "displayName": "who.identifier.type.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.type.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.type.coding.userSelected",
+                            "displayName": "who.identifier.type.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.type.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.type.text",
+                            "displayName": "who.identifier.type.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.type.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.system",
+                            "displayName": "who.identifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.value",
+                            "displayName": "who.identifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.period",
+                            "displayName": "who.identifier.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.period.start",
+                            "displayName": "who.identifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.period.end",
+                            "displayName": "who.identifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.assigner",
+                            "displayName": "who.identifier.assigner",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.assigner"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.assigner.reference",
+                            "displayName": "who.identifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.assigner.type",
+                            "displayName": "who.identifier.assigner.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.assigner.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.assigner.identifier",
+                            "displayName": "who.identifier.assigner.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.assigner.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.identifier.assigner.display",
+                            "displayName": "who.identifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.identifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "who.display",
+                            "displayName": "who.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "who.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf",
+                            "displayName": "onBehalfOf",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.reference",
+                            "displayName": "onBehalfOf.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.type",
+                            "displayName": "onBehalfOf.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier",
+                            "displayName": "onBehalfOf.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.use",
+                            "displayName": "onBehalfOf.identifier.use",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.use"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.type",
+                            "displayName": "onBehalfOf.identifier.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.type.coding.system",
+                            "displayName": "onBehalfOf.identifier.type.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.type.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.type.coding.version",
+                            "displayName": "onBehalfOf.identifier.type.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.type.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.type.coding.code",
+                            "displayName": "onBehalfOf.identifier.type.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.type.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.type.coding.display",
+                            "displayName": "onBehalfOf.identifier.type.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.type.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.type.coding.userSelected",
+                            "displayName": "onBehalfOf.identifier.type.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.type.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.type.text",
+                            "displayName": "onBehalfOf.identifier.type.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.type.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.system",
+                            "displayName": "onBehalfOf.identifier.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.value",
+                            "displayName": "onBehalfOf.identifier.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.period",
+                            "displayName": "onBehalfOf.identifier.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.period.start",
+                            "displayName": "onBehalfOf.identifier.period.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.period.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.period.end",
+                            "displayName": "onBehalfOf.identifier.period.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.period.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.assigner",
+                            "displayName": "onBehalfOf.identifier.assigner",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.assigner"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.assigner.reference",
+                            "displayName": "onBehalfOf.identifier.assigner.reference",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.assigner.reference"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.assigner.type",
+                            "displayName": "onBehalfOf.identifier.assigner.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.assigner.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.assigner.identifier",
+                            "displayName": "onBehalfOf.identifier.assigner.identifier",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.assigner.identifier"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.identifier.assigner.display",
+                            "displayName": "onBehalfOf.identifier.assigner.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.identifier.assigner.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "onBehalfOf.display",
+                            "displayName": "onBehalfOf.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "onBehalfOf.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetFormat",
+                            "displayName": "targetFormat",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetFormat"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "sigFormat",
+                            "displayName": "sigFormat",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "sigFormat"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "data",
+                            "displayName": "data",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "data"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

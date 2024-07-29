@@ -1,0 +1,145 @@
+{
+  "connectorName": "fhirBase",
+  "operationName": "createDuration",
+  "title": "Create Duration",
+  "help": "<h1>Create Duration</h1> <b>The createDuration operation</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "search",
+              "displayName": "search",
+              "inputType": "searchBox",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Search for an attribute using the display name"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "Basic",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "objectId",
+              "displayName": "objectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Object ID of the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "id",
+              "displayName": "id",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "ID of the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "extension",
+              "displayName": "extension",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Extension of the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "value",
+              "displayName": "value",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Value of the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "comparator",
+              "displayName": "comparator",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Comparator of the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "unit",
+              "displayName": "unit",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Unit of the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "system",
+              "displayName": "system",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "System of the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "code",
+              "displayName": "code",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Code of the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "targetObjectId",
+              "displayName": "targetObjectId",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "Target Object ID for the duration"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "FHIRPath",
+              "displayName": "FHIRPath",
+              "inputType": "stringOrExpression",
+              "defaultValue": "",
+              "required": "false",
+              "helpTip": "FHIR Path for the duration"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

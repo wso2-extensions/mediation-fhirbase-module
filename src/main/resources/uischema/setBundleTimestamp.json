@@ -1,0 +1,54 @@
+{
+    "connectorName" : "fhirBase",
+    "operationName" : "setBundleTimestamp",
+    "title" : "SetBundleTimestamp",
+    "help" : "<h1>SetBundleTimestamp</h1> <b>The setTimestamp operation</b>",
+    "elements" : [
+        {
+            "type" : "attributeGroup",
+            "value" : {
+                "groupName" : "General",
+                "elements" : [
+                    {
+                        "type" : "attributeGroup",
+                        "value" : {
+                            "groupName" : "Search",
+                            "elements" : [
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "search",
+                                        "displayName" : "Search",
+                                        "inputType" : "searchBox",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "Search for an attribute using the display name"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type" : "attributeGroup",
+                        "value" : {
+                            "groupName" : "Basic",
+                            "elements" : [
+                                {
+                                    "type" : "attribute",
+                                    "value" : {
+                                        "name" : "timestamp",
+                                        "displayName" : "timestamp",
+                                        "inputType" : "stringOrExpression",
+                                        "defaultValue" : "",
+                                        "required" : "false",
+                                        "helpTip" : "SetBundleTimestamp"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

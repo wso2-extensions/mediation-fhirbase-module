@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<!-- Generated on 18-Thu, 06, 2020 18:09:13+0530 -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="setBundleSignature">
+	<parameter name="objectId" />
+
+	<parameter name="signature" />
+	<parameter name="signature.type.system" />
+	<parameter name="signature.type.version" />
+	<parameter name="signature.type.code" />
+	<parameter name="signature.type.display" />
+	<parameter name="signature.type.userSelected" />
+	<parameter name="signature.when" />
+	<parameter name="signature.who" />
+	<parameter name="signature.who.reference" />
+	<parameter name="signature.who.type" />
+	<parameter name="signature.who.identifier" />
+	<parameter name="signature.who.identifier.use" />
+	<parameter name="signature.who.identifier.type" />
+	<parameter name="signature.who.identifier.type.coding.system" />
+	<parameter name="signature.who.identifier.type.coding.version" />
+	<parameter name="signature.who.identifier.type.coding.code" />
+	<parameter name="signature.who.identifier.type.coding.display" />
+	<parameter name="signature.who.identifier.type.coding.userSelected" />
+	<parameter name="signature.who.identifier.type.text" />
+	<parameter name="signature.who.identifier.system" />
+	<parameter name="signature.who.identifier.value" />
+	<parameter name="signature.who.identifier.period" />
+	<parameter name="signature.who.identifier.period.start" />
+	<parameter name="signature.who.identifier.period.end" />
+	<parameter name="signature.who.identifier.assigner" />
+	<parameter name="signature.who.identifier.assigner.reference" />
+	<parameter name="signature.who.identifier.assigner.type" />
+	<parameter name="signature.who.identifier.assigner.identifier" />
+	<parameter name="signature.who.identifier.assigner.display" />
+	<parameter name="signature.who.display" />
+	<parameter name="signature.onBehalfOf" />
+	<parameter name="signature.onBehalfOf.reference" />
+	<parameter name="signature.onBehalfOf.type" />
+	<parameter name="signature.onBehalfOf.identifier" />
+	<parameter name="signature.onBehalfOf.identifier.use" />
+	<parameter name="signature.onBehalfOf.identifier.type" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.system" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.version" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.code" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.display" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.userSelected" />
+	<parameter name="signature.onBehalfOf.identifier.type.text" />
+	<parameter name="signature.onBehalfOf.identifier.system" />
+	<parameter name="signature.onBehalfOf.identifier.value" />
+	<parameter name="signature.onBehalfOf.identifier.period" />
+	<parameter name="signature.onBehalfOf.identifier.period.start" />
+	<parameter name="signature.onBehalfOf.identifier.period.end" />
+	<parameter name="signature.onBehalfOf.identifier.assigner" />
+	<parameter name="signature.onBehalfOf.identifier.assigner.reference" />
+	<parameter name="signature.onBehalfOf.identifier.assigner.type" />
+	<parameter name="signature.onBehalfOf.identifier.assigner.identifier" />
+	<parameter name="signature.onBehalfOf.identifier.assigner.display" />
+	<parameter name="signature.onBehalfOf.display" />
+	<parameter name="signature.targetFormat" />
+	<parameter name="signature.sigFormat" />
+	<parameter name="signature.data" />
+	<sequence>
+		<class name="org.wso2.healthcare.integration.fhir.operations.FHIRSetBundleSignature" />
+	</sequence>
+</template>

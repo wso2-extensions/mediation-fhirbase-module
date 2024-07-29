@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createExtension">
+    <parameter name="objectId"/>
+
+    <!--Inherited from Element-->
+    <parameter name="id"/>
+    <parameter name="extension"/>
+
+    <!--Extension related parameters-->
+    <parameter name="url"/>
+
+    <parameter name="valueBase64Binary"/>
+    <parameter name="valueBoolean"/>
+    <parameter name="valueCanonical"/>
+    <parameter name="valueCode"/>
+    <parameter name="valueDate"/>
+    <parameter name="valueDateTime"/>
+    <parameter name="valueDecimal"/>
+    <parameter name="valueId"/>
+    <parameter name="valueInstant"/>
+    <parameter name="valueInteger"/>
+    <parameter name="valueMarkdown"/>
+    <parameter name="valueOid"/>
+    <parameter name="valuePositiveInt"/>
+    <parameter name="valueString"/>
+    <parameter name="valueTime"/>
+    <parameter name="valueUnsignedInt"/>
+    <parameter name="valueUri"/>
+    <parameter name="valueUrl"/>
+    <parameter name="valueUuid"/>
+
+    <parameter name="valueAddress"/>
+    <parameter name="valueAddress.use" />
+    <parameter name="valueAddress.type" />
+    <parameter name="valueAddress.text" />
+    <parameter name="valueAddress.line" />
+    <parameter name="valueAddress.city" />
+    <parameter name="valueAddress.district" />
+    <parameter name="valueAddress.state" />
+    <parameter name="valueAddress.postalCode" />
+    <parameter name="valueAddress.country" />
+    <parameter name="valueAddress.period" />
+    <parameter name="valueAddress.period.start" />
+    <parameter name="valueAddress.period.end" />
+
+    <parameter name="valueAge" />
+    <parameter name="valueAge.value" />
+    <parameter name="valueAge.comparator" />
+    <parameter name="valueAge.unit" />
+    <parameter name="valueAge.system" />
+    <parameter name="valueAge.code" />
+
+    <parameter name="valueAnnotation" />
+    <parameter name="valueAnnotation.authorReference" />
+    <parameter name="valueAnnotation.authorReference.reference" />
+    <parameter name="valueAnnotation.authorReference.type" />
+    <parameter name="valueAnnotation.authorReference.identifier" />
+    <parameter name="valueAnnotation.authorReference.identifier.use" />
+    <parameter name="valueAnnotation.authorReference.identifier.type" />
+    <parameter name="valueAnnotation.authorReference.identifier.type.coding.system" />
+    <parameter name="valueAnnotation.authorReference.identifier.type.coding.version" />
+    <parameter name="valueAnnotation.authorReference.identifier.type.coding.code" />
+    <parameter name="valueAnnotation.authorReference.identifier.type.coding.display" />
+    <parameter name="valueAnnotation.authorReference.identifier.type.coding.userSelected" />
+    <parameter name="valueAnnotation.authorReference.identifier.type.text" />
+    <parameter name="valueAnnotation.authorReference.identifier.system" />
+    <parameter name="valueAnnotation.authorReference.identifier.value" />
+    <parameter name="valueAnnotation.authorReference.identifier.period" />
+    <parameter name="valueAnnotation.authorReference.identifier.period.start" />
+    <parameter name="valueAnnotation.authorReference.identifier.period.end" />
+    <parameter name="valueAnnotation.authorReference.identifier.assigner" />
+    <parameter name="valueAnnotation.authorReference.identifier.assigner.reference" />
+    <parameter name="valueAnnotation.authorReference.identifier.assigner.type" />
+    <parameter name="valueAnnotation.authorReference.identifier.assigner.identifier" />
+    <parameter name="valueAnnotation.authorReference.identifier.assigner.display" />
+    <parameter name="valueAnnotation.authorReference.display" />
+    <parameter name="valueAnnotation.authorString" />
+    <parameter name="valueAnnotation.time" />
+    <parameter name="valueAnnotation.text" />
+
+    <!-- attachment releated fields -->
+    <parameter name="valueAttachment" />
+    <parameter name="valueAttachment.contentType" />
+    <parameter name="valueAttachment.language" />
+    <parameter name="valueAttachment.data" />
+    <parameter name="valueAttachment.url" />
+    <parameter name="valueAttachment.size" />
+    <parameter name="valueAttachment.hash" />
+    <parameter name="valueAttachment.title" />
+    <parameter name="valueAttachment.creation" />
+
+
+    <parameter name="valueCodeableConcept"/>
+    <parameter name="valueCodeableConcept.coding.system"/>
+    <parameter name="valueCodeableConcept.coding.version"/>
+    <parameter name="valueCodeableConcept.coding.code"/>
+    <parameter name="valueCodeableConcept.coding.display"/>
+    <parameter name="valueCodeableConcept.coding.userSelected"/>
+    <parameter name="valueCodeableConcept.coding.custom"/>
+
+    <parameter name="valueCoding"/>
+    <parameter name="valueCoding.system"/>
+    <parameter name="valueCoding.version"/>
+    <parameter name="valueCoding.code"/>
+    <parameter name="valueCoding.display"/>
+    <parameter name="valueCoding.userSelected"/>
+
+    <parameter name="valueContactPoint" />
+    <parameter name="valueContactPoint.system" />
+    <parameter name="valueContactPoint.value" />
+    <parameter name="valueContactPoint.use" />
+    <parameter name="valueContactPoint.rank" />
+    <parameter name="valueContactPoint.period" />
+    <parameter name="valueContactPoint.period.start" />
+    <parameter name="valueContactPoint.period.end" />
+
+    <!-- valueCount related parameters-->
+    <parameter name="valueCount" />
+    <parameter name="valueCount.value" />
+    <parameter name="valueCount.comparator" />
+    <parameter name="valueCount.unit" />
+    <parameter name="valueCount.system" />
+    <parameter name="valueCount.code" />
+
+    <!-- valueDistance related parameters-->
+    <parameter name="valueDistance" />
+    <parameter name="valueDistance.value" />
+    <parameter name="valueDistance.comparator" />
+    <parameter name="valueDistance.unit" />
+    <parameter name="valueDistance.system" />
+    <parameter name="valueDistance.code" />
+
+    <!-- valueDuration related parameters-->
+    <parameter name="valueDuration" />
+    <parameter name="valueDuration.value" />
+    <parameter name="valueDuration.comparator" />
+    <parameter name="valueDuration.unit" />
+    <parameter name="valueDuration.system" />
+    <parameter name="valueDuration.code" />
+
+    <!-- valueHumanName related fields -->
+    <parameter name="valueHumanName" />
+    <parameter name="valueHumanName.use" />
+    <parameter name="valueHumanName.text" />
+    <parameter name="valueHumanName.family" />
+    <parameter name="valueHumanName.given" />
+    <parameter name="valueHumanName.prefix" />
+    <parameter name="valueHumanName.suffix" />
+    <parameter name="valueHumanName.period" />
+    <parameter name="valueHumanName.period.start" />
+    <parameter name="valueHumanName.period.end" />
+
+    <!--valueIdentifier parameters-->
+    <parameter name="valueIdentifier" />
+    <parameter name="valueIdentifier.use" />
+    <parameter name="valueIdentifier.type" />
+    <parameter name="valueIdentifier.type.coding.system" />
+    <parameter name="valueIdentifier.type.coding.version" />
+    <parameter name="valueIdentifier.type.coding.code" />
+    <parameter name="valueIdentifier.type.coding.display" />
+    <parameter name="valueIdentifier.type.coding.userSelected" />
+    <parameter name="valueIdentifier.type.text" />
+    <parameter name="valueIdentifier.system" />
+    <parameter name="valueIdentifier.value" />
+    <parameter name="valueIdentifier.period" />
+    <parameter name="valueIdentifier.period.start" />
+    <parameter name="valueIdentifier.period.end" />
+    <parameter name="valueIdentifier.assigner" />
+    <parameter name="valueIdentifier.assigner.reference" />
+    <parameter name="valueIdentifier.assigner.type" />
+    <parameter name="valueIdentifier.assigner.identifier.use" />
+    <parameter name="valueIdentifier.assigner.identifier.type" />
+    <parameter name="valueIdentifier.assigner.identifier.period" />
+    <parameter name="valueIdentifier.assigner.identifier.assigner" />
+    <parameter name="valueIdentifier.assigner.display" />
+
+    <!-- money related fields -->
+    <parameter name="valueMoney" />
+    <parameter name="valueMoney.value" />
+    <parameter name="valueMoney.currency" />
+
+    <!-- period related fields -->
+    <parameter name="valuePeriod" />
+    <parameter name="valuePeriod.start" />
+    <parameter name="valuePeriod.end" />
+
+    <!-- quantity related parameters-->
+    <parameter name="valueQuantity" />
+    <parameter name="valueQuantity.value" />
+    <parameter name="valueQuantity.comparator" />
+    <parameter name="valueQuantity.unit" />
+    <parameter name="valueQuantity.system" />
+    <parameter name="valueQuantity.code" />
+
+    <!-- range related fields -->
+    <parameter name="valueRange" />
+    <parameter name="valueRange.low" />
+    <parameter name="valueRange.low.value" />
+    <parameter name="valueRange.low.unit" />
+    <parameter name="valueRange.low.system" />
+    <parameter name="valueRange.low.code" />
+    <parameter name="valueRange.high" />
+    <parameter name="valueRange.high.value" />
+    <parameter name="valueRange.high.unit" />
+    <parameter name="valueRange.high.system" />
+    <parameter name="valueRange.high.code" />
+
+    <!-- ratio related parameters -->
+    <parameter name="valueRatio" />
+    <parameter name="valueRatio.numerator" />
+    <parameter name="valueRatio.numerator.value" />
+    <parameter name="valueRatio.numerator.comparator" />
+    <parameter name="valueRatio.numerator.unit" />
+    <parameter name="valueRatio.numerator.system" />
+    <parameter name="valueRatio.numerator.code" />
+    <parameter name="valueRatio.denominator" />
+    <parameter name="valueRatio.denominator.value" />
+    <parameter name="valueRatio.denominator.comparator" />
+    <parameter name="valueRatio.denominator.unit" />
+    <parameter name="valueRatio.denominator.system" />
+    <parameter name="valueRatio.denominator.code" />
+
+
+    <!--Reference Parameters-->
+    <parameter name="valueReference"/>
+    <parameter name="valueReference.reference"/>
+    <parameter name="valueReference.type"/>
+    <parameter name="valueReference.identifier"/>
+    <parameter name="valueReference.identifier.use"/>
+    <parameter name="valueReference.identifier.type"/>
+    <parameter name="valueReference.identifier.system"/>
+    <parameter name="valueReference.identifier.value"/>
+    <parameter name="valueReference.identifier.period.start"/>
+    <parameter name="valueReference.identifier.period.end"/>
+    <parameter name="valueReference.identifier.assigner.reference"/>
+    <parameter name="valueReference.identifier.assigner.display"/>
+    <parameter name="valueReference.display"/>
+
+    <!-- valueSampledData related parameters-->
+    <parameter name="valueSampledData" />
+    <parameter name="valueSampledData.origin.value" />
+    <parameter name="valueSampledData.origin.unit" />
+    <parameter name="valueSampledData.origin.system" />
+    <parameter name="valueSampledData.origin.code" />
+    <parameter name="valueSampledData.period" />
+    <parameter name="valueSampledData.factor" />
+    <parameter name="valueSampledData.lowerLimit" />
+    <parameter name="valueSampledData.upperLimit" />
+    <parameter name="valueSampledData.dimensions" />
+    <parameter name="valueSampledData.data" />
+
+
+    <!-- signature related fields -->
+    <parameter name="valueSignature" />
+    <parameter name="valueSignature.type.system" />
+    <parameter name="valueSignature.type.version" />
+    <parameter name="valueSignature.type.code" />
+    <parameter name="valueSignature.type.display" />
+    <parameter name="valueSignature.type.userSelected" />
+    <parameter name="valueSignature.when" />
+    <parameter name="valueSignature.who" />
+    <parameter name="valueSignature.who.reference" />
+    <parameter name="valueSignature.who.type" />
+    <parameter name="valueSignature.who.identifier" />
+    <parameter name="valueSignature.who.identifier.use" />
+    <parameter name="valueSignature.who.identifier.type" />
+    <parameter name="valueSignature.who.identifier.type.coding.system" />
+    <parameter name="valueSignature.who.identifier.type.coding.version" />
+    <parameter name="valueSignature.who.identifier.type.coding.code" />
+    <parameter name="valueSignature.who.identifier.type.coding.display" />
+    <parameter name="valueSignature.who.identifier.type.coding.userSelected" />
+    <parameter name="valueSignature.who.identifier.type.text" />
+    <parameter name="valueSignature.who.identifier.system" />
+    <parameter name="valueSignature.who.identifier.value" />
+    <parameter name="valueSignature.who.identifier.period" />
+    <parameter name="valueSignature.who.identifier.period.start" />
+    <parameter name="valueSignature.who.identifier.period.end" />
+    <parameter name="valueSignature.who.identifier.assigner" />
+    <parameter name="valueSignature.who.identifier.assigner.reference" />
+    <parameter name="valueSignature.who.identifier.assigner.type" />
+    <parameter name="valueSignature.who.identifier.assigner.identifier" />
+    <parameter name="valueSignature.who.identifier.assigner.display" />
+    <parameter name="valueSignature.who.display" />
+    <parameter name="valueSignature.onBehalfOf" />
+    <parameter name="valueSignature.onBehalfOf.reference" />
+    <parameter name="valueSignature.onBehalfOf.type" />
+    <parameter name="valueSignature.onBehalfOf.identifier" />
+    <parameter name="valueSignature.onBehalfOf.identifier.use" />
+    <parameter name="valueSignature.onBehalfOf.identifier.type" />
+    <parameter name="valueSignature.onBehalfOf.identifier.type.coding.system" />
+    <parameter name="valueSignature.onBehalfOf.identifier.type.coding.version" />
+    <parameter name="valueSignature.onBehalfOf.identifier.type.coding.code" />
+    <parameter name="valueSignature.onBehalfOf.identifier.type.coding.display" />
+    <parameter name="valueSignature.onBehalfOf.identifier.type.coding.userSelected" />
+    <parameter name="valueSignature.onBehalfOf.identifier.type.text" />
+    <parameter name="valueSignature.onBehalfOf.identifier.system" />
+    <parameter name="valueSignature.onBehalfOf.identifier.value" />
+    <parameter name="valueSignature.onBehalfOf.identifier.period" />
+    <parameter name="valueSignature.onBehalfOf.identifier.period.start" />
+    <parameter name="valueSignature.onBehalfOf.identifier.period.end" />
+    <parameter name="valueSignature.onBehalfOf.identifier.assigner" />
+    <parameter name="valueSignature.onBehalfOf.identifier.assigner.reference" />
+    <parameter name="valueSignature.onBehalfOf.identifier.assigner.type" />
+    <parameter name="valueSignature.onBehalfOf.identifier.assigner.identifier" />
+    <parameter name="valueSignature.onBehalfOf.identifier.assigner.display" />
+    <parameter name="valueSignature.onBehalfOf.display" />
+    <parameter name="valueSignature.targetFormat" />
+    <parameter name="valueSignature.sigFormat" />
+    <parameter name="valueSignature.data" />
+
+
+    <!-- timing related parameters -->
+    <parameter name="valueTiming" />
+    <parameter name="valueTiming.event" />
+    <parameter name="valueTiming.repeat" />
+    <parameter name="valueTiming.repeat.boundsDuration" />
+    <parameter name="valueTiming.repeat.boundsDuration.value" />
+    <parameter name="valueTiming.repeat.boundsDuration.comparator" />
+    <parameter name="valueTiming.repeat.boundsDuration.unit" />
+    <parameter name="valueTiming.repeat.boundsDuration.system" />
+    <parameter name="valueTiming.repeat.boundsDuration.code" />
+    <parameter name="valueTiming.repeat.boundsRange" />
+    <parameter name="valueTiming.repeat.boundsRange.low" />
+    <parameter name="valueTiming.repeat.boundsRange.low.value" />
+    <parameter name="valueTiming.repeat.boundsRange.low.unit" />
+    <parameter name="valueTiming.repeat.boundsRange.low.system" />
+    <parameter name="valueTiming.repeat.boundsRange.low.code" />
+    <parameter name="valueTiming.repeat.boundsRange.high" />
+    <parameter name="valueTiming.repeat.boundsRange.high.value" />
+    <parameter name="valueTiming.repeat.boundsRange.high.unit" />
+    <parameter name="valueTiming.repeat.boundsRange.high.system" />
+    <parameter name="valueTiming.repeat.boundsRange.high.code" />
+    <parameter name="valueTiming.repeat.boundsPeriod" />
+    <parameter name="valueTiming.repeat.boundsPeriod.start" />
+    <parameter name="valueTiming.repeat.boundsPeriod.end" />
+    <parameter name="valueTiming.repeat.count" />
+    <parameter name="valueTiming.repeat.countMax" />
+    <parameter name="valueTiming.repeat.duration" />
+    <parameter name="valueTiming.repeat.durationMax" />
+    <parameter name="valueTiming.repeat.durationUnit" />
+    <parameter name="valueTiming.repeat.frequency" />
+    <parameter name="valueTiming.repeat.frequencyMax" />
+    <parameter name="valueTiming.repeat.period" />
+    <parameter name="valueTiming.repeat.periodMax" />
+    <parameter name="valueTiming.repeat.periodUnit" />
+    <parameter name="valueTiming.repeat.dayOfWeek" />
+    <parameter name="valueTiming.repeat.timeOfDay" />
+    <parameter name="valueTiming.repeat.when" />
+    <parameter name="valueTiming.repeat.offset" />
+    <parameter name="valueTiming.code" />
+    <parameter name="valueTiming.code.coding.system" />
+    <parameter name="valueTiming.code.coding.version" />
+    <parameter name="valueTiming.code.coding.code" />
+    <parameter name="valueTiming.code.coding.display" />
+    <parameter name="valueTiming.code.coding.userSelected" />
+    <parameter name="valueTiming.code.text" />
+
+    <!-- contact point related fields-->
+    <parameter name="valueContactDetail"/>
+    <parameter name="valueContactDetail.name"/>
+    <parameter name="valueContactDetail.telecom" />
+    <parameter name="valueContactDetail.telecom.system" />
+    <parameter name="valueContactDetail.telecom.value" />
+    <parameter name="valueContactDetail.telecom.use" />
+    <parameter name="valueContactDetail.telecom.rank" />
+    <parameter name="valueContactDetail.telecom.period" />
+    <parameter name="valueContactDetail.telecom.period.start" />
+    <parameter name="valueContactDetail.telecom.period.end" />
+
+
+    <!-- valueContributor point related fields-->
+    <parameter name="valueContributor" />
+    <parameter name="valueContributor.type" />
+    <parameter name="valueContributor.name" />
+    <parameter name="valueContributor.contact" />
+    <parameter name="valueContributor.contact.name"/>
+    <parameter name="valueContributor.contact.telecom" />
+    <parameter name="valueContributor.contact.telecom.system" />
+    <parameter name="valueContributor.contact.telecom.value" />
+    <parameter name="valueContributor.contact.telecom.use" />
+    <parameter name="valueContributor.contact.telecom.rank" />
+    <parameter name="valueContributor.contact.telecom.period" />
+    <parameter name="valueContributor.contact.telecom.period.start" />
+    <parameter name="valueContributor.contact.telecom.period.end" />
+
+    <!-- valueDataRequirement point related fields-->
+    <!--<parameter name="valueDataRequirement"/>
+    <parameter name="valueDataRequirement.type"/>
+    <parameter name="valueDataRequirement.profile"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept.code"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept.valueSet"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept.coding.system"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept.coding.version"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept.coding.code"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept.coding.display"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept.coding.userSelected"/>
+    <parameter name="valueDataRequirement.subjectCodeableConcept.text"/>
+    <parameter name="valueDataRequirement.subjectReference"/>
+    <parameter name="valueDataRequirement.subjectReference.reference"/>
+    <parameter name="valueDataRequirement.subjectReference.type"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier.use"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier.type"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier.system"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier.value"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier.period.start"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier.period.end"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier.assigner.reference"/>
+    <parameter name="valueDataRequirement.subjectReference.identifier.assigner.display"/>
+    <parameter name="valueDataRequirement.subjectReference.display"/>
+    <parameter name="valueDataRequirement.mustSupport"/>
+    <parameter name="valueDataRequirement.codeFilter"/>
+    <parameter name="valueDataRequirement.codeFilter.path"/>
+    <parameter name="valueDataRequirement.codeFilter.searchParam"/>
+    <parameter name="valueDataRequirement.codeFilter.valueSet"/>
+    <parameter name="valueDataRequirement.codeFilter.code"/>
+    <parameter name="valueDataRequirement.codeFilter.code.system"/>
+    <parameter name="valueDataRequirement.codeFilter.code.version"/>
+    <parameter name="valueDataRequirement.codeFilter.code.code"/>
+    <parameter name="valueDataRequirement.codeFilter.code.display"/>
+    <parameter name="valueDataRequirement.codeFilter.code.userSelected"/>
+    <parameter name="valueDataRequirement.dateFilter"/>
+    <parameter name="valueDataRequirement.dateFilter.path"/>
+    <parameter name="valueDataRequirement.dateFilter.searchParam"/>
+    <parameter name="valueDataRequirement.dateFilter.valueDateTime"/>
+    <parameter name="valueDataRequirement.dateFilter.valuePeriod"/>
+    <parameter name="valueDataRequirement.dateFilter.valuePeriod.start"/>
+    <parameter name="valueDataRequirement.dateFilter.valuePeriod.end"/>
+    <parameter name="valueDataRequirement.dateFilter.valueDuration"/>
+    <parameter name="valueDataRequirement.dateFilter.valueDuration.value"/>
+    <parameter name="valueDataRequirement.dateFilter.valueDuration.comparator"/>
+    <parameter name="valueDataRequirement.dateFilter.valueDuration.unit"/>
+    <parameter name="valueDataRequirement.dateFilter.valueDuration.system"/>
+    <parameter name="valueDataRequirement.dateFilter.valueDuration.code"/>
+    <parameter name="valueDataRequirement.limit"/>
+    <parameter name="valueDataRequirement.sort"/>
+    <parameter name="valueDataRequirement.sort.path"/>
+    <parameter name="valueDataRequirement.sort.direction"/>-->
+
+    <!-- valueExpression point related fields-->
+    <parameter name="valueExpression" />
+    <parameter name="valueExpression.description" />
+    <parameter name="valueExpression.name" />
+    <parameter name="valueExpression.language" />
+    <parameter name="valueExpression.expression" />
+    <parameter name="valueExpression.reference" />
+
+    <!-- valueParameterDefinition point related fields-->
+    <!--<parameter name="valueParameterDefinition"/>
+    <parameter name="valueParameterDefinition.name"/>
+    <parameter name="valueParameterDefinition.use"/>
+    <parameter name="valueParameterDefinition.min"/>
+    <parameter name="valueParameterDefinition.max"/>
+    <parameter name="valueParameterDefinition.documentation"/>
+    <parameter name="valueParameterDefinition.type"/>
+    <parameter name="valueParameterDefinition.profile"/>-->
+
+
+    <!-- valueRelatedArtifact point related fields-->
+    <!--<parameter name="valueRelatedArtifact"/>
+    <parameter name="valueRelatedArtifact.type"/>
+    <parameter name="valueRelatedArtifact.label"/>
+    <parameter name="valueRelatedArtifact.display"/>
+    <parameter name="valueRelatedArtifact.citation"/>
+    <parameter name="valueRelatedArtifact.url"/>
+    <parameter name="valueRelatedArtifact.document"/>
+    <parameter name="valueRelatedArtifact.document.contentType" />
+    <parameter name="valueRelatedArtifact.document.language" />
+    <parameter name="valueRelatedArtifact.document.data" />
+    <parameter name="valueRelatedArtifact.document.url" />
+    <parameter name="valueRelatedArtifact.document.size" />
+    <parameter name="valueRelatedArtifact.document.hash" />
+    <parameter name="valueRelatedArtifact.document.title" />
+    <parameter name="valueRelatedArtifact.document.creation" />
+    <parameter name="valueRelatedArtifact.resource"/>-->
+
+    <!--valueMeta related parameters-->
+    <parameter name="valueMeta"/>
+    <parameter name="valueMeta.versionId"/>
+    <parameter name="valueMeta.source"/>
+    <parameter name="valueMeta.profile"/>
+    <parameter name="valueMeta.security"/>
+    <parameter name="valueMeta.security.code"/>
+    <parameter name="valueMeta.security.valueSet"/>
+    <parameter name="valueMeta.security.coding.system"/>
+    <parameter name="valueMeta.security.coding.version"/>
+    <parameter name="valueMeta.security.coding.code"/>
+    <parameter name="valueMeta.security.coding.display"/>
+    <parameter name="valueMeta.security.coding.userSelected"/>
+    <parameter name="valueMeta.security.text"/>
+    <parameter name="valueMeta.tag"/>
+    <parameter name="valueMeta.tag.code"/>
+    <parameter name="valueMeta.tag.valueSet"/>
+    <parameter name="valueMeta.tag.coding.system"/>
+    <parameter name="valueMeta.tag.coding.version"/>
+    <parameter name="valueMeta.tag.coding.code"/>
+    <parameter name="valueMeta.tag.coding.display"/>
+    <parameter name="valueMeta.tag.coding.userSelected"/>
+    <parameter name="valueMeta.tag.text"/>
+
+    <!--Inherited parameters for create operations-->
+    <parameter name="targetObjectId"/>
+    <parameter name="FHIRPath"/>
+
+    <sequence>
+        <class name="org.wso2.healthcare.integration.fhir.operations.basic.FHIRCreateExtension" />
+    </sequence>
+</template>

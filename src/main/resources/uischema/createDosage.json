@@ -1,0 +1,1971 @@
+{
+    "connectorName": "fhirBase",
+    "operationName": "createDosage",
+    "title": "Create Dosage",
+    "help": "<h1>Create Dosage</h1> <b>The createDosage operation</b>",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "General",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "search",
+                            "displayName": "search",
+                            "inputType": "searchBox",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "Search for an attribute using the display name"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "id",
+                            "displayName": "id",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "id"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "extension",
+                            "displayName": "extension",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "extension"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "sequence",
+                            "displayName": "sequence",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "sequence"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "text",
+                            "displayName": "text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction",
+                            "displayName": "additionalInstruction",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction.code",
+                            "displayName": "additionalInstruction.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction.valueSet",
+                            "displayName": "additionalInstruction.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction.coding.system",
+                            "displayName": "additionalInstruction.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction.coding.version",
+                            "displayName": "additionalInstruction.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction.coding.code",
+                            "displayName": "additionalInstruction.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction.coding.display",
+                            "displayName": "additionalInstruction.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction.coding.userSelected",
+                            "displayName": "additionalInstruction.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "additionalInstruction.text",
+                            "displayName": "additionalInstruction.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "additionalInstruction.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing",
+                            "displayName": "timing",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.event",
+                            "displayName": "timing.event",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.event"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat",
+                            "displayName": "timing.repeat",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsDuration",
+                            "displayName": "timing.repeat.boundsDuration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsDuration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsDuration.value",
+                            "displayName": "timing.repeat.boundsDuration.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsDuration.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsDuration.comparator",
+                            "displayName": "timing.repeat.boundsDuration.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsDuration.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsDuration.unit",
+                            "displayName": "timing.repeat.boundsDuration.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsDuration.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsDuration.system",
+                            "displayName": "timing.repeat.boundsDuration.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsDuration.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsDuration.code",
+                            "displayName": "timing.repeat.boundsDuration.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsDuration.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange",
+                            "displayName": "timing.repeat.boundsRange",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.low",
+                            "displayName": "timing.repeat.boundsRange.low",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.low"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.low.value",
+                            "displayName": "timing.repeat.boundsRange.low.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.low.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.low.unit",
+                            "displayName": "timing.repeat.boundsRange.low.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.low.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.low.system",
+                            "displayName": "timing.repeat.boundsRange.low.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.low.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.low.code",
+                            "displayName": "timing.repeat.boundsRange.low.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.low.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.high",
+                            "displayName": "timing.repeat.boundsRange.high",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.high"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.high.value",
+                            "displayName": "timing.repeat.boundsRange.high.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.high.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.high.unit",
+                            "displayName": "timing.repeat.boundsRange.high.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.high.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.high.system",
+                            "displayName": "timing.repeat.boundsRange.high.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.high.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsRange.high.code",
+                            "displayName": "timing.repeat.boundsRange.high.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsRange.high.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsPeriod",
+                            "displayName": "timing.repeat.boundsPeriod",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsPeriod"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsPeriod.start",
+                            "displayName": "timing.repeat.boundsPeriod.start",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsPeriod.start"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.boundsPeriod.end",
+                            "displayName": "timing.repeat.boundsPeriod.end",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.boundsPeriod.end"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.count",
+                            "displayName": "timing.repeat.count",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.count"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.countMax",
+                            "displayName": "timing.repeat.countMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.countMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.duration",
+                            "displayName": "timing.repeat.duration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.duration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.durationMax",
+                            "displayName": "timing.repeat.durationMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.durationMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.durationUnit",
+                            "displayName": "timing.repeat.durationUnit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.durationUnit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.frequency",
+                            "displayName": "timing.repeat.frequency",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.frequency"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.frequencyMax",
+                            "displayName": "timing.repeat.frequencyMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.frequencyMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.period",
+                            "displayName": "timing.repeat.period",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.period"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.periodMax",
+                            "displayName": "timing.repeat.periodMax",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.periodMax"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.periodUnit",
+                            "displayName": "timing.repeat.periodUnit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.periodUnit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.dayOfWeek",
+                            "displayName": "timing.repeat.dayOfWeek",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.dayOfWeek"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.timeOfDay",
+                            "displayName": "timing.repeat.timeOfDay",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.timeOfDay"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.when",
+                            "displayName": "timing.repeat.when",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.when"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.repeat.offset",
+                            "displayName": "timing.repeat.offset",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.repeat.offset"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.code",
+                            "displayName": "timing.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.code.coding.system",
+                            "displayName": "timing.code.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.code.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.code.coding.version",
+                            "displayName": "timing.code.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.code.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.code.coding.code",
+                            "displayName": "timing.code.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.code.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.code.coding.display",
+                            "displayName": "timing.code.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.code.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.code.coding.userSelected",
+                            "displayName": "timing.code.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.code.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "timing.code.text",
+                            "displayName": "timing.code.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "timing.code.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededBoolean",
+                            "displayName": "asNeededBoolean",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededBoolean"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept",
+                            "displayName": "asNeededCodeableConcept",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept.code",
+                            "displayName": "asNeededCodeableConcept.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept.valueSet",
+                            "displayName": "asNeededCodeableConcept.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept.coding.system",
+                            "displayName": "asNeededCodeableConcept.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept.coding.version",
+                            "displayName": "asNeededCodeableConcept.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept.coding.code",
+                            "displayName": "asNeededCodeableConcept.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept.coding.display",
+                            "displayName": "asNeededCodeableConcept.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept.coding.userSelected",
+                            "displayName": "asNeededCodeableConcept.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "asNeededCodeableConcept.text",
+                            "displayName": "asNeededCodeableConcept.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "asNeededCodeableConcept.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site",
+                            "displayName": "site",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site.code",
+                            "displayName": "site.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site.valueSet",
+                            "displayName": "site.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site.coding.system",
+                            "displayName": "site.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site.coding.version",
+                            "displayName": "site.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site.coding.code",
+                            "displayName": "site.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site.coding.display",
+                            "displayName": "site.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site.coding.userSelected",
+                            "displayName": "site.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "site.text",
+                            "displayName": "site.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "site.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route",
+                            "displayName": "route",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route.code",
+                            "displayName": "route.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route.valueSet",
+                            "displayName": "route.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route.coding.system",
+                            "displayName": "route.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route.coding.version",
+                            "displayName": "route.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route.coding.code",
+                            "displayName": "route.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route.coding.display",
+                            "displayName": "route.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route.coding.userSelected",
+                            "displayName": "route.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "route.text",
+                            "displayName": "route.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "route.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method",
+                            "displayName": "method",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method.code",
+                            "displayName": "method.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method.valueSet",
+                            "displayName": "method.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method.coding.system",
+                            "displayName": "method.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method.coding.version",
+                            "displayName": "method.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method.coding.code",
+                            "displayName": "method.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method.coding.display",
+                            "displayName": "method.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method.coding.userSelected",
+                            "displayName": "method.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "method.text",
+                            "displayName": "method.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "method.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate",
+                            "displayName": "doseAndRate",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type",
+                            "displayName": "doseAndRate.type",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type.code",
+                            "displayName": "doseAndRate.type.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type.valueSet",
+                            "displayName": "doseAndRate.type.valueSet",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type.valueSet"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type.coding.system",
+                            "displayName": "doseAndRate.type.coding.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type.coding.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type.coding.version",
+                            "displayName": "doseAndRate.type.coding.version",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type.coding.version"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type.coding.code",
+                            "displayName": "doseAndRate.type.coding.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type.coding.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type.coding.display",
+                            "displayName": "doseAndRate.type.coding.display",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type.coding.display"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type.coding.userSelected",
+                            "displayName": "doseAndRate.type.coding.userSelected",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type.coding.userSelected"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.type.text",
+                            "displayName": "doseAndRate.type.text",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.type.text"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange",
+                            "displayName": "doseAndRate.doseRange",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.low",
+                            "displayName": "doseAndRate.doseRange.low",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.low"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.low.value",
+                            "displayName": "doseAndRate.doseRange.low.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.low.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.low.unit",
+                            "displayName": "doseAndRate.doseRange.low.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.low.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.low.system",
+                            "displayName": "doseAndRate.doseRange.low.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.low.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.low.code",
+                            "displayName": "doseAndRate.doseRange.low.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.low.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.high",
+                            "displayName": "doseAndRate.doseRange.high",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.high"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.high.value",
+                            "displayName": "doseAndRate.doseRange.high.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.high.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.high.unit",
+                            "displayName": "doseAndRate.doseRange.high.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.high.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.high.system",
+                            "displayName": "doseAndRate.doseRange.high.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.high.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseRange.high.code",
+                            "displayName": "doseAndRate.doseRange.high.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseRange.high.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseQuantity",
+                            "displayName": "doseAndRate.doseQuantity",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseQuantity"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseQuantity.value",
+                            "displayName": "doseAndRate.doseQuantity.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseQuantity.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseQuantity.unit",
+                            "displayName": "doseAndRate.doseQuantity.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseQuantity.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseQuantity.system",
+                            "displayName": "doseAndRate.doseQuantity.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseQuantity.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.doseQuantity.code",
+                            "displayName": "doseAndRate.doseQuantity.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.doseQuantity.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio",
+                            "displayName": "doseAndRate.rateRatio",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.numerator",
+                            "displayName": "doseAndRate.rateRatio.numerator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.numerator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.numerator.value",
+                            "displayName": "doseAndRate.rateRatio.numerator.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.numerator.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.numerator.comparator",
+                            "displayName": "doseAndRate.rateRatio.numerator.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.numerator.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.numerator.unit",
+                            "displayName": "doseAndRate.rateRatio.numerator.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.numerator.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.numerator.system",
+                            "displayName": "doseAndRate.rateRatio.numerator.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.numerator.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.numerator.code",
+                            "displayName": "doseAndRate.rateRatio.numerator.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.numerator.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.denominator",
+                            "displayName": "doseAndRate.rateRatio.denominator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.denominator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.denominator.value",
+                            "displayName": "doseAndRate.rateRatio.denominator.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.denominator.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.denominator.comparator",
+                            "displayName": "doseAndRate.rateRatio.denominator.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.denominator.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.denominator.unit",
+                            "displayName": "doseAndRate.rateRatio.denominator.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.denominator.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.denominator.system",
+                            "displayName": "doseAndRate.rateRatio.denominator.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.denominator.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRatio.denominator.code",
+                            "displayName": "doseAndRate.rateRatio.denominator.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRatio.denominator.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange",
+                            "displayName": "doseAndRate.rateRange",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.low",
+                            "displayName": "doseAndRate.rateRange.low",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.low"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.low.value",
+                            "displayName": "doseAndRate.rateRange.low.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.low.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.low.unit",
+                            "displayName": "doseAndRate.rateRange.low.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.low.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.low.system",
+                            "displayName": "doseAndRate.rateRange.low.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.low.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.low.code",
+                            "displayName": "doseAndRate.rateRange.low.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.low.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.high",
+                            "displayName": "doseAndRate.rateRange.high",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.high"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.high.value",
+                            "displayName": "doseAndRate.rateRange.high.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.high.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.high.unit",
+                            "displayName": "doseAndRate.rateRange.high.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.high.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.high.system",
+                            "displayName": "doseAndRate.rateRange.high.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.high.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateRange.high.code",
+                            "displayName": "doseAndRate.rateRange.high.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateRange.high.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateQuantity",
+                            "displayName": "doseAndRate.rateQuantity",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateQuantity"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateQuantity.value",
+                            "displayName": "doseAndRate.rateQuantity.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateQuantity.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateQuantity.comparator",
+                            "displayName": "doseAndRate.rateQuantity.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateQuantity.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateQuantity.unit",
+                            "displayName": "doseAndRate.rateQuantity.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateQuantity.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateQuantity.system",
+                            "displayName": "doseAndRate.rateQuantity.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateQuantity.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "doseAndRate.rateQuantity.code",
+                            "displayName": "doseAndRate.rateQuantity.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "doseAndRate.rateQuantity.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod",
+                            "displayName": "maxDosePerPeriod",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.numerator",
+                            "displayName": "maxDosePerPeriod.numerator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.numerator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.numerator.value",
+                            "displayName": "maxDosePerPeriod.numerator.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.numerator.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.numerator.comparator",
+                            "displayName": "maxDosePerPeriod.numerator.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.numerator.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.numerator.unit",
+                            "displayName": "maxDosePerPeriod.numerator.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.numerator.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.numerator.system",
+                            "displayName": "maxDosePerPeriod.numerator.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.numerator.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.numerator.code",
+                            "displayName": "maxDosePerPeriod.numerator.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.numerator.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.denominator",
+                            "displayName": "maxDosePerPeriod.denominator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.denominator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.denominator.value",
+                            "displayName": "maxDosePerPeriod.denominator.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.denominator.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.denominator.comparator",
+                            "displayName": "maxDosePerPeriod.denominator.comparator",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.denominator.comparator"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.denominator.unit",
+                            "displayName": "maxDosePerPeriod.denominator.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.denominator.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.denominator.system",
+                            "displayName": "maxDosePerPeriod.denominator.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.denominator.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerPeriod.denominator.code",
+                            "displayName": "maxDosePerPeriod.denominator.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerPeriod.denominator.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerAdministration",
+                            "displayName": "maxDosePerAdministration",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerAdministration"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerAdministration.value",
+                            "displayName": "maxDosePerAdministration.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerAdministration.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerAdministration.unit",
+                            "displayName": "maxDosePerAdministration.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerAdministration.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerAdministration.system",
+                            "displayName": "maxDosePerAdministration.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerAdministration.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerAdministration.code",
+                            "displayName": "maxDosePerAdministration.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerAdministration.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerLifetime",
+                            "displayName": "maxDosePerLifetime",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerLifetime"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerLifetime.value",
+                            "displayName": "maxDosePerLifetime.value",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerLifetime.value"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerLifetime.unit",
+                            "displayName": "maxDosePerLifetime.unit",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerLifetime.unit"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerLifetime.system",
+                            "displayName": "maxDosePerLifetime.system",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerLifetime.system"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "maxDosePerLifetime.code",
+                            "displayName": "maxDosePerLifetime.code",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "maxDosePerLifetime.code"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetObjectId",
+                            "displayName": "targetObjectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "targetObjectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "FHIRPath",
+                            "displayName": "FHIRPath",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "FHIRPath"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

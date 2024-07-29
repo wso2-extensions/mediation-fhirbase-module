@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2024, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<!-- Generated on 18-Thu, 06, 2020 18:09:13+0530 -->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="createBundle">
+	<parameter name="objectId" />
+
+	<!--Common resource parameters-->
+	<parameter name="id" />
+	<parameter name="meta.versionId" />
+	<parameter name="meta.lastUpdated" />
+	<parameter name="meta.source" />
+	<parameter name="meta.profile" />
+	<parameter name="meta.security" />
+	<parameter name="meta.tag" />
+	<parameter name="implicitRules" />
+	<parameter name="language" />
+	<parameter name="text.status" />
+	<parameter name="text.div" />
+	
+	<parameter name="identifier" />
+	<parameter name="identifier.use" />
+	<parameter name="identifier.type" />
+	<parameter name="identifier.type.coding.system" />
+	<parameter name="identifier.type.coding.version" />
+	<parameter name="identifier.type.coding.code" />
+	<parameter name="identifier.type.coding.display" />
+	<parameter name="identifier.type.coding.userSelected" />
+	<parameter name="identifier.type.text" />
+	<parameter name="identifier.system" />
+	<parameter name="identifier.value" />
+	<parameter name="identifier.period" />
+	<parameter name="identifier.period.start" />
+	<parameter name="identifier.period.end" />
+	<parameter name="identifier.assigner" />
+	<parameter name="identifier.assigner.reference" />
+	<parameter name="identifier.assigner.type" />
+	<parameter name="identifier.assigner.identifier" />
+	<parameter name="identifier.assigner.identifier.use" />
+	<parameter name="identifier.assigner.identifier.type" />
+	<parameter name="identifier.assigner.identifier.system" />
+	<parameter name="identifier.assigner.identifier.value" />
+	<parameter name="identifier.assigner.identifier.period" />
+	<parameter name="identifier.assigner.identifier.assigner" />
+	<parameter name="identifier.assigner.display" />
+	<parameter name="type" />
+	<parameter name="timestamp" />
+	<parameter name="total" />
+	<parameter name="link" />
+	<parameter name="link.relation" />
+	<parameter name="link.url" />
+	<parameter name="entry" />
+	<parameter name="entry.link" />
+	<parameter name="entry.fullUrl" />
+	<parameter name="entry.resource" />
+	<parameter name="entry.search" />
+	<parameter name="entry.search.mode" />
+	<parameter name="entry.search.score" />
+	<parameter name="entry.request" />
+	<parameter name="entry.request.method" />
+	<parameter name="entry.request.url" />
+	<parameter name="entry.request.ifNoneMatch" />
+	<parameter name="entry.request.ifModifiedSince" />
+	<parameter name="entry.request.ifMatch" />
+	<parameter name="entry.request.ifNoneExist" />
+	<parameter name="entry.response" />
+	<parameter name="entry.response.status" />
+	<parameter name="entry.response.location" />
+	<parameter name="entry.response.etag" />
+	<parameter name="entry.response.lastModified" />
+	<parameter name="entry.response.outcome" />
+	<parameter name="signature" />
+	<parameter name="signature.type.system" />
+	<parameter name="signature.type.version" />
+	<parameter name="signature.type.code" />
+	<parameter name="signature.type.display" />
+	<parameter name="signature.type.userSelected" />
+	<parameter name="signature.when" />
+	<parameter name="signature.who" />
+	<parameter name="signature.who.reference" />
+	<parameter name="signature.who.type" />
+	<parameter name="signature.who.identifier" />
+	<parameter name="signature.who.identifier.use" />
+	<parameter name="signature.who.identifier.type" />
+	<parameter name="signature.who.identifier.type.coding.system" />
+	<parameter name="signature.who.identifier.type.coding.version" />
+	<parameter name="signature.who.identifier.type.coding.code" />
+	<parameter name="signature.who.identifier.type.coding.display" />
+	<parameter name="signature.who.identifier.type.coding.userSelected" />
+	<parameter name="signature.who.identifier.type.text" />
+	<parameter name="signature.who.identifier.system" />
+	<parameter name="signature.who.identifier.value" />
+	<parameter name="signature.who.identifier.period" />
+	<parameter name="signature.who.identifier.period.start" />
+	<parameter name="signature.who.identifier.period.end" />
+	<parameter name="signature.who.identifier.assigner" />
+	<parameter name="signature.who.identifier.assigner.reference" />
+	<parameter name="signature.who.identifier.assigner.type" />
+	<parameter name="signature.who.identifier.assigner.identifier" />
+	<parameter name="signature.who.identifier.assigner.display" />
+	<parameter name="signature.who.display" />
+	<parameter name="signature.onBehalfOf" />
+	<parameter name="signature.onBehalfOf.reference" />
+	<parameter name="signature.onBehalfOf.type" />
+	<parameter name="signature.onBehalfOf.identifier" />
+	<parameter name="signature.onBehalfOf.identifier.use" />
+	<parameter name="signature.onBehalfOf.identifier.type" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.system" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.version" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.code" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.display" />
+	<parameter name="signature.onBehalfOf.identifier.type.coding.userSelected" />
+	<parameter name="signature.onBehalfOf.identifier.type.text" />
+	<parameter name="signature.onBehalfOf.identifier.system" />
+	<parameter name="signature.onBehalfOf.identifier.value" />
+	<parameter name="signature.onBehalfOf.identifier.period" />
+	<parameter name="signature.onBehalfOf.identifier.period.start" />
+	<parameter name="signature.onBehalfOf.identifier.period.end" />
+	<parameter name="signature.onBehalfOf.identifier.assigner" />
+	<parameter name="signature.onBehalfOf.identifier.assigner.reference" />
+	<parameter name="signature.onBehalfOf.identifier.assigner.type" />
+	<parameter name="signature.onBehalfOf.identifier.assigner.identifier" />
+	<parameter name="signature.onBehalfOf.identifier.assigner.display" />
+	<parameter name="signature.onBehalfOf.display" />
+	<parameter name="signature.targetFormat" />
+	<parameter name="signature.sigFormat" />
+	<parameter name="signature.data" />
+	<sequence>
+		<class name="org.wso2.healthcare.integration.fhir.operations.FHIRCreateBundle" />
+	</sequence>
+</template>

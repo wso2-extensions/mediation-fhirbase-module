@@ -1,0 +1,230 @@
+{
+  "connectorName" : "fhirBase",
+  "operationName" : "createAddress",
+  "title" : "CreateAddress",
+  "help" : "<h1>CreateAddress</h1> <b>The createAddress operation</b>",
+  "elements" : [
+    {
+      "type" : "attributeGroup",
+      "value" : {
+        "groupName" : "General",
+        "elements" : [
+          {
+            "type" : "attributeGroup",
+            "value" : {
+              "groupName" : "Search",
+              "elements" : [
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "search",
+                    "displayName" : "Search",
+                    "inputType" : "searchBox",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "Search for an attribute using the display name"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type" : "attributeGroup",
+            "value" : {
+              "groupName" : "Basic",
+              "elements" : [
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "objectId",
+                    "displayName" : "objectId",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "id",
+                    "displayName" : "id",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "extension",
+                    "displayName" : "extension",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "use",
+                    "displayName" : "use",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "type",
+                    "displayName" : "type",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "text",
+                    "displayName" : "text",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "line",
+                    "displayName" : "line",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "city",
+                    "displayName" : "city",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "district",
+                    "displayName" : "district",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "state",
+                    "displayName" : "state",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "postalCode",
+                    "displayName" : "postalCode",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "country",
+                    "displayName" : "country",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "period",
+                    "displayName" : "period",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "period.start",
+                    "displayName" : "period.start",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "period.end",
+                    "displayName" : "period.end",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "targetObjectId",
+                    "displayName" : "targetObjectId",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                },
+                {
+                  "type" : "attribute",
+                  "value" : {
+                    "name" : "FHIRPath",
+                    "displayName" : "FHIRPath",
+                    "inputType" : "stringOrExpression",
+                    "defaultValue" : "",
+                    "required" : "false",
+                    "helpTip" : "CreateAddress"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
