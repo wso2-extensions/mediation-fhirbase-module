@@ -1,5 +1,5 @@
 {
-  "connectorName": "fhirBase",
+  "connectorName": "fhirbase",
   "operationName": "createCount",
   "title": "Create Count",
   "help": "<h1>Create Count</h1> <b>The createCount operation</b>",

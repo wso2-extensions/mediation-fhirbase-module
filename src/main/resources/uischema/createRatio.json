@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createRatio",
     "title": "Create Ratio",
     "help": "<h1>Create Ratio</h1> <b>The createRatio operation</b>",

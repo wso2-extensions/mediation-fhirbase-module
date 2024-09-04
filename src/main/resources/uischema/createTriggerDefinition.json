@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createTriggerDefinition",
     "title": "Create TriggerDefinition",
     "help": "<h1>Create TriggerDefinition</h1> <b>The createTriggerDefinition operation</b>",

@@ -1,5 +1,5 @@
 {
-    "connectorName" : "fhirBase",
+    "connectorName" : "fhirbase",
     "operationName" : "addBundleLink",
     "title" : "AddBundleLink",
     "help" : "<h1>AddBundleLink</h1> <b>The addLink operation</b>",

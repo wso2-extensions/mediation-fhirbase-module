@@ -1,5 +1,5 @@
 {
-  "connectorName": "fhirBase",
+  "connectorName": "fhirbase",
   "operationName": "createContributor",
   "title": "Create Contributor",
   "help": "<h1>Create Contributor</h1> <b>The createContributor operation</b>",

@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createExpression",
     "title": "Create Expression",
     "help": "<h1>Create Expression</h1> <b>The createExpression operation</b>",

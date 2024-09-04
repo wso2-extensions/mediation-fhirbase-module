@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createRelatedArtifact",
     "title": "Create RelatedArtifact",
     "help": "<h1>Create RelatedArtifact</h1> <b>The createRelatedArtifact operation</b>",

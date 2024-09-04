@@ -1,5 +1,5 @@
 {
-  "connectorName" : "fhirBase",
+  "connectorName" : "fhirbase",
   "operationName" : "addElement",
   "title" : "AddElement",
   "help" : "<h1>AddElement</h1> <b>The addElement operation</b>",

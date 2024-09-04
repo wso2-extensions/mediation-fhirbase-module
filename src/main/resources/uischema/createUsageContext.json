@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createUsageContext",
     "title": "Create UsageContext",
     "help": "<h1>Create UsageContext</h1> <b>The createUsageContext operation</b>",

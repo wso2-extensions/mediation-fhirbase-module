@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createTiming",
     "title": "Create Timing",
     "help": "<h1>Create Timing</h1> <b>The createTiming operation</b>",

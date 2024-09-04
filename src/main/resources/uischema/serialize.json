@@ -1,0 +1,38 @@
+{
+    "connectorName": "fhirbase",
+    "operationName": "serialize",
+    "title": "Serialize FHIR Resource/Bundle",
+    "help": "Serialize a FHIR Resource/Bundle to a JSON string",
+    "elements": [
+        {
+            "type": "attributeGroup",
+            "value": {
+                "groupName": "Basic",
+                "elements": [
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "objectId",
+                            "displayName": "objectId",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "objectId"
+                        }
+                    },
+                    {
+                        "type": "attribute",
+                        "value": {
+                            "name": "targetContentType",
+                            "displayName": "targetContentType",
+                            "inputType": "stringOrExpression",
+                            "defaultValue": "",
+                            "required": "false",
+                            "helpTip": "type"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

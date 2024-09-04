@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createSignature",
     "title": "Create Signature",
     "help": "<h1>Create Signature</h1> <b>The createSignature operation</b>",

@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createAttachment",
     "title": "Create Attachment",
     "help": "<h1>Create Attachment</h1> <b>The createAttachment operation</b>",

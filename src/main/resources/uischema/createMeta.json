@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createMeta",
     "title": "Create Meta",
     "help": "<h1>Create Meta</h1> <b>The createMeta operation</b>",
