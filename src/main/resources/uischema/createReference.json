@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createReference",
     "title": "Create Reference",
     "help": "<h1>Create Reference</h1> <b>The createReference operation</b>",

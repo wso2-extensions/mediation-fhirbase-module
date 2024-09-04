@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createDosage",
     "title": "Create Dosage",
     "help": "<h1>Create Dosage</h1> <b>The createDosage operation</b>",

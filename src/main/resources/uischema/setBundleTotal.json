@@ -1,5 +1,5 @@
 {
-    "connectorName" : "fhirBase",
+    "connectorName" : "fhirbase",
     "operationName" : "setBundleTotal",
     "title" : "SetBundleTotal",
     "help" : "<h1>SetBundleTotal</h1> <b>The setTotal operation</b>",

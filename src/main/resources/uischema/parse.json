@@ -1,0 +1,16 @@
+{
+  "connectorName": "fhirbase",
+  "operationName": "parse",
+  "title": "Parse FHIR Resource/Bundle",
+  "help": "Parse a FHIR Resource/Bundle to a JSON string",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "Basic",
+        "elements": [
+        ]
+      }
+    }
+  ]
+}

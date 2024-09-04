@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createDataRequirement",
     "title": "Create DataRequirement",
     "help": "<h1>Create DataRequirement</h1> <b>The createDataRequirement operation</b>",

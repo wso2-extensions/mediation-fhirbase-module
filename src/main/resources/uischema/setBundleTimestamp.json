@@ -1,5 +1,5 @@
 {
-    "connectorName" : "fhirBase",
+    "connectorName" : "fhirbase",
     "operationName" : "setBundleTimestamp",
     "title" : "SetBundleTimestamp",
     "help" : "<h1>SetBundleTimestamp</h1> <b>The setTimestamp operation</b>",

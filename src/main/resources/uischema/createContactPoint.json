@@ -1,5 +1,5 @@
 {
-  "connectorName": "fhirBase",
+  "connectorName": "fhirbase",
   "operationName": "createContactPoint",
   "title": "Create Contact Point",
   "help": "<h1>Create Contact Point</h1> <b>The createContactPoint operation</b>",

@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createMoney",
     "title": "Create Money",
     "help": "<h1>Create Money</h1> <b>The createMoney operation</b>",

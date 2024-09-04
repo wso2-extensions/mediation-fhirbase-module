@@ -26,6 +26,10 @@
 			<file>serialize.xml</file>
 			<description>Serialize FHIR Resource to the message in Message Context</description>
 		</component>
+		<component name="parse" >
+			<file>parse.xml</file>
+			<description>Parse FHIR Resource/Bundle from the Message Context</description>
+		</component>
 		<component name="evaluateFHIRPath" >
 			<file>evaluateFHIRPath.xml</file>
 			<description>Evaluate FHIRPath and retrieve information</description>

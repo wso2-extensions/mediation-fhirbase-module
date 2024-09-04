@@ -1,5 +1,5 @@
 {
-    "connectorName": "fhirBase",
+    "connectorName": "fhirbase",
     "operationName": "createParameterDefinition",
     "title": "Create ParameterDefinition",
     "help": "<h1>Create ParameterDefinition</h1> <b>The createParameterDefinition operation</b>",
