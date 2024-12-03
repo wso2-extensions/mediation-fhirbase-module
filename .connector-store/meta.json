@@ -8,7 +8,7 @@
   "mavenArtifactId": "mediation-fhirbase-module",
   "description": "The FHIR Base Module facilitates basic CRUD operations and searches on FHIR resources, bundling, error handling and ensuring standardized interactions with FHIR-compliant servers.",
   "status": "Active",
-  "connectorRank": 28,
+  "rank": 28,
   "type": "Connector",
   "labels": [
     "FHIR",
@@ -238,7 +238,12 @@
               "isHidden":false
           }
       ],
-      "connections": [],
+      "connections": [
+          {
+              "name": "fhirbase",
+              "description": "Connection for accessing FHIRBase repository."
+          }
+      ],
       "isHidden": false
     }
   ]
