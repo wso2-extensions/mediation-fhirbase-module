@@ -1,10 +1,15 @@
 {
   "name" : "FHIR Base Module",
   "owner" : "WSO2",
+  "product": "MI",
   "category": "Developer Tools",
   "documentationUrl": "https://github.com/wso2-extensions/mediation-fhirbase-module/tree/main/docs",
+  "mavenGroupId": "org.wso2.integration.module",
+  "mavenArtifactId": "mi-module-fhirbase",
   "description": "The FHIR Base Module facilitates basic CRUD operations and searches on FHIR resources, bundling, error handling and ensuring standardized interactions with FHIR-compliant servers.",
   "status": "Active",
+  "rank": 28,
+  "type": "Connector",
   "labels": [
     "FHIR",
     "Healthcare"
@@ -15,7 +20,226 @@
       "products": [
         "MI 4.2.0",
         "MI 1.2.0"
-      ]
+      ],
+      "operations": [
+          {
+              "name":"addBundleEntry",
+              "description":"Add an entry to the Bundle.",
+              "isHidden":false
+          },
+          {
+              "name":"addBundleLink",
+              "description":"Add a link to the Bundle.",
+              "isHidden":false
+          },
+          {
+              "name":"addElement",
+              "description":"Add an element datatype to a resource.",
+              "isHidden":false
+          },
+          {
+              "name":"createAddress",
+              "description":"Create an Address datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createAge",
+              "description":"Create an Age datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createAnnotation",
+              "description":"Create an Annotation datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createAttachment",
+              "description":"Create an Attachment datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createBundle",
+              "description":"Create a Bundle resource.",
+              "isHidden":false
+          },
+          {
+              "name":"createCodeableConcept",
+              "description":"Create a CodeableConcept datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createCoding",
+              "description":"Create a Coding datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createContactDetail",
+              "description":"Create a ContactDetail datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createContactPoint",
+              "description":"Create a ContactPoint datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createCount",
+              "description":"Create a Count datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createContributor",
+              "description":"Create a Contributor datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createDataRequirement",
+              "description":"Create a DataRequirement datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createDosage",
+              "description":"Create a Dosage datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createDuration",
+              "description":"Create a Duration datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createExpression",
+              "description":"Create an Expression datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createHumanName",
+              "description":"Create a HumanName datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createIdentifier",
+              "description":"Create an Identifier datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createMeta",
+              "description":"Create a Meta datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createNarrative",
+              "description":"Create a Narrative datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createParameterDefinition",
+              "description":"Create a ParameterDefinition datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createPeriod",
+              "description":"Create a Period datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createQuantity",
+              "description":"Create a Quantity datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createRange",
+              "description":"Create a Range datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createRatio",
+              "description":"Create a Ratio datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createReference",
+              "description":"Create a Reference datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createRelatedArtifact",
+              "description":"Create a RelatedArtifact datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createSampledData",
+              "description":"Create a SampledData datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createSignature",
+              "description":"Create a Signature datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createSimpleQuantity",
+              "description":"Create a SimpleQuantity datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createTiming",
+              "description":"Create a Timing datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createTriggerDefinition",
+              "description":"Create a TriggerDefinition datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"createUsageContext",
+              "description":"Create a UsageContext datatype.",
+              "isHidden":false
+          },
+          {
+              "name":"evaluateFHIRPath",
+              "description":"Evaluate a FHIRPath expression.",
+              "isHidden":false
+          },
+          {
+              "name":"serialize",
+              "description":"Serialize a resource to a specific format.",
+              "isHidden":false
+          },
+          {
+              "name":"validate",
+              "description":"Validate a resource.",
+              "isHidden":false
+          },
+          {
+              "name":"setBundleIdentifier",
+              "description":"Set the identifier for the Bundle.",
+              "isHidden":false
+          },
+          {
+              "name":"setBundleType",
+              "description":"Set the type for the Bundle.",
+              "isHidden":false
+          },
+          {
+              "name":"setBundleTimestamp",
+              "description":"Set the timestamp for the Bundle.",
+              "isHidden":false
+          },
+          {
+              "name":"setBundleTotal",
+              "description":"Set the total for the Bundle.",
+              "isHidden":false
+          },
+          {
+              "name":"setBundleSignature",
+              "description":"Set the signature for the Bundle.",
+              "isHidden":false
+          }
+      ],
+      "connections": [],
+      "isHidden": false
     }
   ]
 }
