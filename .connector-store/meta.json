@@ -238,12 +238,7 @@
               "isHidden":false
           }
       ],
-      "connections": [
-          {
-              "name": "fhirbase",
-              "description": "Connection for accessing FHIRBase repository."
-          }
-      ],
+      "connections": [],
       "isHidden": false
     }
   ]
