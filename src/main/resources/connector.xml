@@ -21,5 +21,6 @@
         <dependency component="fhir" />
         <description>WSO2 fhirserver connector library</description>
     </component>
+    <displayName>FHIR Base</displayName>
     <icon>icon/icon-small.gif</icon>
 </connector>
