@@ -171,7 +171,12 @@
             <version>${cava-toml.version}</version>
         </dependency>
     </dependencies>
-
+    <scm>
+        <connection>scm:git:https://github.com/wso2-extensions/mediation-fhirbase-module</connection>
+        <url>https://github.com/wso2-extensions/mediation-fhirbase-module.git</url>
+        <developerConnection>scm:git:https://github.com/wso2-extensions/mediation-fhirbase-module</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     <build>
         <plugins>
             <plugin>
