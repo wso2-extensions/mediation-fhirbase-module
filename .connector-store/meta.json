@@ -3,7 +3,7 @@
     "owner": "WSO2",
     "product": "MI",
     "category": "Developer Tools",
-    "documentationUrl": "https://github.com/wso2-extensions/mediation-fhirbase-module/tree/main/docs",
+    "documentationUrl": "https://mi.docs.wso2.com/en/latest/reference/connectors/fhir-connector/fhir-connector-overview/",
     "mavenGroupId": "org.wso2.integration.module",
     "mavenArtifactId": "mi-module-fhirbase",
     "description": "The FHIR Base Module facilitates basic CRUD operations and searches on FHIR resources, bundling, error handling and ensuring standardized interactions with FHIR-compliant servers.",
